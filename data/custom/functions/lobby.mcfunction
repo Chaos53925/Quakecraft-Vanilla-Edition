@@ -51,7 +51,6 @@ execute as @a[scores={money=1..}] run function custom:money
 execute as @a[scores={stats=1..}] run function custom:stats
 
 scoreboard players set #reload reload 1
-
 execute as @a store result score @s xp run xp query @s levels
 
 schedule function custom:lobby 1s
