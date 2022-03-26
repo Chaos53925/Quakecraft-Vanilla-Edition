@@ -21,37 +21,37 @@ item replace entity @s inventory.25 with minecraft:gray_stained_glass_pane{displ
 item replace entity @s inventory.26 with minecraft:gray_stained_glass_pane{display: {Name: '{"text":""}'}}
 item replace entity @s inventory.0 with minecraft:red_stained_glass_pane{display: {Name: '{"translate":"shop.back","color":"red"}'}}
 
-#partikel im besitz
+#pbuttons im besitz
 execute as @s[tag=!game,tag=!p1] unless entity @s[nbt={Inventory:[{Slot:10b, id:"minecraft:firework_rocket"}]}] run item replace entity @s inventory.1 with minecraft:firework_rocket{display: {Name: '{"translate":"shop.shpa.firework"}', Lore: ['{"translate":"shop.owned"}']}} 1
 execute as @s[tag=!game,tag=p1] unless entity @s[nbt={Inventory:[{Slot:10b, id:"minecraft:firework_rocket"}]}] run item replace entity @s inventory.1 with minecraft:firework_rocket{Enchantments:[{}],display: {Name: '{"translate":"shop.shpa.firework"}'}}
 
-#partikel nicht im besitz
+#pbuttons nicht im besitz
 execute as @s[tag=!game,tag=!p2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:heart_of_the_sea"}]}] run item replace entity @s inventory.2 with minecraft:heart_of_the_sea{display: {Name: '{"translate":"shop.shpa.sea"}', Lore: ['[{"translate":"shop.cost"},{"text":" 5000 "},{"translate":"main.coins"}]']}} 1
-#partikel im besitz
+#pbuttons im besitz
 execute as @s[tag=!game,tag=p2b,tag=!p2] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:heart_of_the_sea"}]}] run item replace entity @s inventory.2 with minecraft:heart_of_the_sea{display: {Name: '{"translate":"shop.shpa.sea"}', Lore: ['{"translate":"shop.owned"}']}} 1
 execute as @s[tag=!game,tag=p2,tag=p2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:heart_of_the_sea"}]}] run item replace entity @s inventory.2 with minecraft:heart_of_the_sea{Enchantments:[{}],display: {Name: '{"translate":"shop.shpa.sea"}'}}
 
-#partikel nicht im besitz
+#pbuttons nicht im besitz
 execute as @s[tag=!game,tag=!p3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:composter"}]}] run item replace entity @s inventory.3 with minecraft:composter{display: {Name: '{"translate":"shop.shpa.composter"}', Lore: ['[{"translate":"shop.cost"},{"text":" 5000 "},{"translate":"main.coins"}]']}} 1
-#partikel im besitz
+#pbuttons im besitz
 execute as @s[tag=!game,tag=p3b,tag=!p3] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:composter"}]}] run item replace entity @s inventory.3 with minecraft:composter{display: {Name: '{"translate":"shop.shpa.composter"}', Lore: ['{"translate":"shop.owned"}']}} 1
 execute as @s[tag=!game,tag=p3,tag=p3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:composter"}]}] run item replace entity @s inventory.3 with minecraft:composter{Enchantments:[{}],display: {Name: '{"translate":"shop.shpa.composter"}'}}
 
-#partikel nicht im besitz
+#pbuttons nicht im besitz
 execute as @s[tag=!game,tag=!p4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:diamond_sword"}]}] run item replace entity @s inventory.4 with minecraft:diamond_sword{display: {Name: '{"translate":"shop.shpa.sword"}', Lore: ['[{"translate":"shop.cost"},{"text":" 5000 "},{"translate":"main.coins"}]']}} 1
-#partikel im besitz
+#pbuttons im besitz
 execute as @s[tag=!game,tag=p4b,tag=!p4] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:diamond_sword"}]}] run item replace entity @s inventory.4 with minecraft:diamond_sword{display: {Name: '{"translate":"shop.shpa.sword"}', Lore: ['{"translate":"shop.owned"}']}} 1
 execute as @s[tag=!game,tag=p4,tag=p4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:diamond_sword"}]}] run item replace entity @s inventory.4 with minecraft:diamond_sword{Enchantments:[{}],display: {Name: '{"translate":"shop.shpa.sword"}'}}
 
-#partikel nicht im besitz
+#pbuttons nicht im besitz
 execute as @s[tag=!game,tag=!p5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:enchanted_book"}]}] run item replace entity @s inventory.5 with minecraft:enchanted_book{display: {Name: '{"translate":"shop.shpa.enchanted"}', Lore: ['[{"translate":"shop.cost"},{"text":" 5000 "},{"translate":"main.coins"}]']}} 1
-#partikel im besitz
+#pbuttons im besitz
 execute as @s[tag=!game,tag=p5b,tag=!p5] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:enchanted_book"}]}] run item replace entity @s inventory.5 with minecraft:enchanted_book{display: {Name: '{"translate":"shop.shpa.enchanted"}', Lore: ['{"translate":"shop.owned"}']}} 1
 execute as @s[tag=!game,tag=p5,tag=p5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:enchanted_book"}]}] run item replace entity @s inventory.5 with minecraft:enchanted_book{Enchantments:[{}],display: {Name: '{"translate":"shop.shpa.enchanted"}'}}
 
-#partikel nicht im besitz
+#pbuttons nicht im besitz
 execute as @s[tag=!game,tag=!p6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:soul_torch"}]}] run item replace entity @s inventory.6 with minecraft:soul_torch{display: {Name: '{"translate":"shop.shpa.soul"}', Lore: ['[{"translate":"shop.cost"},{"text":" 5000 "},{"translate":"main.coins"}]']}} 1
-#partikel im besitz
+#pbuttons im besitz
 execute as @s[tag=!game,tag=p6b,tag=!p6] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:soul_torch"}]}] run item replace entity @s inventory.6 with minecraft:soul_torch{display: {Name: '{"translate":"shop.shpa.soul"}', Lore: ['{"translate":"shop.owned"}']}} 1
 execute as @s[tag=!game,tag=p6,tag=p6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:soul_torch"}]}] run item replace entity @s inventory.6 with minecraft:soul_torch{Enchantments:[{}],display: {Name: '{"translate":"shop.shpa.soul"}'}}
 

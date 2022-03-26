@@ -26,10 +26,10 @@ item replace entity @s[tag=!game,tag=map] hotbar.4 with air
 item replace entity @s[tag=!game,tag=map] hotbar.5 with air
 item replace entity @s[tag=!game,tag=map] hotbar.6 with air
 item replace entity @s[tag=!game,tag=map] hotbar.7 with air
-execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:19b, id:"minecraft:red_concrete"}]}] run function custom:shop/artikel/map/apex
-execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:20b, id:"minecraft:yellow_concrete"}]}] run function custom:shop/artikel/map/desert
-execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:21b, id:"minecraft:light_blue_concrete"}]}] run function custom:shop/artikel/map/candy
-execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:23b, id:"minecraft:light_gray_concrete"}]}] run function custom:shop/artikel/map/lostcity
-execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:24b, id:"minecraft:purple_concrete"}]}] run function custom:shop/artikel/map/na
-execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:25b, id:"minecraft:lime_concrete"}]}] run function custom:shop/artikel/map/na
+execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:19b, id:"minecraft:red_concrete"}]}] run function custom:shop/buttons/map/apex
+execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:20b, id:"minecraft:yellow_concrete"}]}] run function custom:shop/buttons/map/desert
+execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:21b, id:"minecraft:light_blue_concrete"}]}] run function custom:shop/buttons/map/candy
+execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:23b, id:"minecraft:light_gray_concrete"}]}] run function custom:shop/buttons/map/lostcity
+execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:24b, id:"minecraft:purple_concrete"}]}] run function custom:shop/buttons/map/na
+execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:25b, id:"minecraft:lime_concrete"}]}] run function custom:shop/buttons/map/na
 execute as @s[tag=!game,tag=map] unless entity @s[nbt={Inventory:[{Slot:9b, id:"minecraft:red_stained_glass_pane"}]}] run function custom:shop/main/initmain
