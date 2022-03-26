@@ -1,0 +1,6 @@
+execute positioned as @e[distance=0,limit=1,tag=s1] as @a run playsound minecraft:entity.blaze.death master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.6 2 0.1
+execute positioned as @e[distance=0,limit=1,tag=s2] as @a run playsound minecraft:block.anvil.land master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.6 0 0.1
+execute positioned as @e[distance=0,limit=1,tag=s3] as @a run playsound minecraft:entity.enderman.death master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.6 2 0.1
+execute positioned as @e[distance=0,limit=1,tag=s4] as @a run playsound minecraft:entity.iron_golem.death master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.6 2 0.1
+execute positioned as @e[distance=0,limit=1,tag=s5] as @a run playsound minecraft:entity.wither.ambient master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.6 2 0.1
+execute positioned as @e[distance=0,limit=1,tag=s6] as @a run playsound minecraft:entity.ender_dragon.ambient master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.6 1.0 0.1

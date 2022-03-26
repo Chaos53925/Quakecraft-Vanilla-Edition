@@ -1,0 +1,9 @@
+scoreboard players add @s[team=apex] ApexKills 1
+scoreboard players add @s[team=desert] DesertKills 1
+scoreboard players add @s[team=candy] CandyKills 1
+scoreboard players add @s[team=lostcity] LostcityKills 1
+scoreboard players add @s Kills 1
+scoreboard players add @s Coins 5
+scoreboard players add @s Coin 5
+scoreboard players add @s streak 1
+scoreboard players add @s kstreak 1
