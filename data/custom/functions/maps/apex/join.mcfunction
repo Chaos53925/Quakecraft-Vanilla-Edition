@@ -9,6 +9,7 @@ tellraw @a[team=apex] [{"selector":"@s","color":"red"},{"translate":"map.join.in
 
 tellraw @a[team=Lobby] [{"selector":"@s","color":"red"},{"translate":"map.join.apex.inlobby","color":"yellow"},{"score":{"name":"#apex","objective":"apexlobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
 
+scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players
 tp @s -1384 42.3 246 180.0 0.0
 spawnpoint @s -1384 43 246 180.0

@@ -5,3 +5,4 @@ scoreboard players set @s effectsek 40
 scoreboard players set @s book 0
 tag @s remove ding
 kill @s
+scoreboard players remove @s Tode 1

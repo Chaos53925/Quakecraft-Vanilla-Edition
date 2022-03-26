@@ -9,6 +9,7 @@ tellraw @a[team=desert] [{"selector":"@s","color":"gold"},{"translate":"map.join
 
 tellraw @a[team=Lobby] [{"selector":"@s","color":"gold"},{"translate":"map.join.desert.inlobby","color":"yellow"},{"score":{"name":"#desert","objective":"desertlobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
 
+scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players
 tp @s -178 44.3 343 0.0 0.0
 spawnpoint @s -178 45 343 0.0

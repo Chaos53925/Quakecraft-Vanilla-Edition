@@ -9,6 +9,7 @@ tellraw @a[team=candy] [{"selector":"@s","color":"aqua"},{"translate":"map.join.
 
 tellraw @a[team=Lobby] [{"selector":"@s","color":"aqua"},{"translate":"map.join.candy.inlobby","color":"yellow"},{"score":{"name":"#candy","objective":"candylobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
 
+scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players
 tp @s -708 35.3 372 0.0 0.0
 spawnpoint @s -708 36 372 0.0

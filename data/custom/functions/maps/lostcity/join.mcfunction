@@ -6,6 +6,7 @@ tellraw @a[team=lostcity] [{"selector":"@s","color":"gray"},{"translate":"map.jo
 
 tellraw @a[team=Lobby] [{"selector":"@s","color":"gray"},{"translate":"map.join.lostcity.inlobby","color":"yellow"},{"score":{"name":"#lostcity","objective":"lostcitylobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
 
+scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players
 tp @s 352 47.3 325 0.0 0.0
 spawnpoint @s 352 48 325 0.0
