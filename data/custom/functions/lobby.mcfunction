@@ -50,7 +50,8 @@ execute as @a run function custom:special
 
 execute as @a[scores={money=1..}] run function custom:money
 execute as @a[scores={stats=1..}] run function custom:stats
-execute as @a[scores={pay=1..}] at @s run function custom:pay
+execute as @a[scores={pay=1..}] at @s if entity @p[distance=0.1..] run function custom:pay
+execute as @a[scores={pay=1..}] at @s unless entity @p[distance=0.1..] run function custom:nopay
 
 scoreboard players set #reload reload 1
 execute as @a store result score @s xp run xp query @s levels
