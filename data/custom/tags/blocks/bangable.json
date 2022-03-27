@@ -1,7 +1,6 @@
 {
     "values":[
         "minecraft:air",
-        "minecraft:iron_trapdoor",
         "minecraft:cave_air",
         "#minecraft:carpets",
         "#minecraft:flower_pots",

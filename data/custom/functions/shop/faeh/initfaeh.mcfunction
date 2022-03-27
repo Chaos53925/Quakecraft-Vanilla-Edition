@@ -61,8 +61,7 @@ execute as @s[tag=!game,tag=ar6,tag=ar6b] unless entity @s[nbt={Inventory:[{Slot
 #persönliche spezialeffekte (keine zusätzlichen sprachen)
 execute as @s[tag=!game,tag=mn1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{Enchantments:[{}],display: {Name: '{"translate":"shop.faeh.mine"}'}}
 execute as @s[tag=!game,tag=br1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:brown_dye"}]}] run item replace entity @s inventory.8 with minecraft:brown_dye{Enchantments:[{}],display: {Name: '{"text":"Brownie-Style"}'}}
-execute as @s[tag=!game,tag=!br1,tag=brownie] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run item replace entity @s inventory.8 with minecraft:barrier{display: {Name: '{"translate":"shop.faeh.barrier.special"}'}}
-execute as @s[tag=!game,tag=minen,tag=!mn1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run item replace entity @s inventory.8 with minecraft:barrier{display: {Name: '{"translate":"shop.faeh.barrier.special"}'}}
+execute as @s[tag=!game,tag=!br1,tag=!mn1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run item replace entity @s inventory.8 with minecraft:barrier{display: {Name: '{"translate":"shop.faeh.barrier.special"}'}}
 
 tag @s remove shop
 tag @s add faeh
