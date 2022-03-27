@@ -40,8 +40,8 @@ execute as @a[team=Lobby,scores={book=1..},tag=!play] unless entity @s[nbt={Inve
 execute as @a[team=Lobby] run function custom:shop/work
 
 
-execute as @a[scores={pay=1..}] at @s if entity @p[distance=0.1..] if score @s Coins >= @s pay run function custom:pay
-execute as @a[scores={pay=1..}] at @s unless entity @p[distance=0.1..] run function custom:nopay
-execute as @a[scores={pay=1..}] at @s if entity @p[distance=0.1..] if score @s Coins < @s pay run function custom:nocoinspay
+execute as @a[scores={pay=1..}] at @s if entity @p[distance=0.1..] if score @s Coins >= @s pay run function custom:pay/pay
+execute as @a[scores={pay=1..}] at @s unless entity @p[distance=0.1..] run function custom:pay/nopay
+execute as @a[scores={pay=1..}] at @s if entity @p[distance=0.1..] if score @s Coins < @s pay run function custom:pay/nocoinspay
 
 execute as @a at @s if entity @s[y=0,dy=0] run kill @s
