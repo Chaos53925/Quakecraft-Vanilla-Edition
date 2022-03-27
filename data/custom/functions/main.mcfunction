@@ -32,6 +32,8 @@ item replace entity @a[team=Lobby] hotbar.8 with minecraft:knowledge_book{Recipe
 
 execute as @a[team=Lobby] if score #reload reload matches 1 run title @s actionbar [{"text":">>> ","color":"gold"},{"translate":"main.actionbar.wins","color":"dark_blue"},{"score":{"name":"@s","objective":"Wins"},"color":"red"},{"text":" | ","color":"gold"},{"translate":"main.actionbar.kills","color":"dark_blue"},{"score":{"name":"@s","objective":"Kills"},"color":"red"},{"text":" | ","color":"gold"},{"translate":"main.actionbar.deaths","color":"dark_blue"},{"score":{"name":"@s","objective":"Tode"},"color":"red"},{"text":" | ","color":"gold"},{"translate":"main.actionbar.coins","color":"dark_blue"},{"score":{"name":"@s","objective":"Coins"},"color":"red"},{"text":" <<<","color":"gold"}]
 
+execute as @a unless score @s id = @s id store result score @s id run scoreboard players add #counter id 1
+
 kill @e[type=item,tag=!immune]
 execute as @a[team=] run function custom:shop/main/initmain
 gamemode adventure @a[team=!Build]
