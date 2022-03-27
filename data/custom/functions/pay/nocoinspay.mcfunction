@@ -1,2 +1,2 @@
-tellraw @s {"text":"Nicht genug Coins"}
+tellraw @s {"translate":"pay.nocoins"}
 scoreboard players reset @s pay
