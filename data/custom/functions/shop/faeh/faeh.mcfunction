@@ -104,6 +104,7 @@ execute as @s[tag=!game,scores={Coins=..49999,xp=25..},tag=!ar6b] unless entity 
 #persönliche spezialeffekte (keine zusätzlichen sprachen)
 execute as @s[tag=!game,tag=br1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:brown_dye"}]}] run function custom:shop/buttons/faeh/active
 execute as @s[tag=!game,tag=mn1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run function custom:shop/buttons/faeh/active
-execute as @s[tag=!game,tag=!br1,tag=!mn1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run function custom:shop/buttons/faeh/special/inactive
+execute as @s[tag=!game,tag=!br1,tag=brownie] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run function custom:shop/buttons/faeh/special/inactive
+execute as @s[tag=!game,tag=minen,tag=!mn1] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run function custom:shop/buttons/faeh/special/inactive
 
 execute as @s[tag=!game] unless entity @s[nbt={Inventory:[{Slot:9b, id:"minecraft:red_stained_glass_pane"}]}] run function custom:shop/shop/initshop
