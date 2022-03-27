@@ -12,5 +12,6 @@ scoreboard objectives add xp dummy
 scoreboard objectives add jointimer dummy
 
 scoreboard objectives add money trigger
+scoreboard objectives add pay trigger
 scoreboard objectives add stats trigger
 

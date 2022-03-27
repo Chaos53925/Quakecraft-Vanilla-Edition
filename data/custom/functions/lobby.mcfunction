@@ -33,6 +33,7 @@ scoreboard players enable @a[team=Lobby] candyjoin
 scoreboard players enable @a[team=Lobby] lostcityjoin
 scoreboard players enable @a money
 scoreboard players enable @a stats
+scoreboard players enable @a pay
 
 scoreboard players add @a jointimer 1
 tellraw @a[scores={jointimer=10..},tag=midgame] {"translate":"join.leave.midgame","color":"red"}
@@ -49,6 +50,7 @@ execute as @a run function custom:special
 
 execute as @a[scores={money=1..}] run function custom:money
 execute as @a[scores={stats=1..}] run function custom:stats
+execute as @a[scores={pay=1..}] run function custom:pay
 
 scoreboard players set #reload reload 1
 execute as @a store result score @s xp run xp query @s levels
