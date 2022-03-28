@@ -8,6 +8,7 @@ tag @s remove slv3
 tag @s remove slv4
 tag @s remove slv6
 tag @s remove wlv1
+tag @s remove wlv2
 tag @s remove wlv3
 tag @s remove wlv4
 tag @s remove wlv5

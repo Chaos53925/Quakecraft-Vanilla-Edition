@@ -9,6 +9,7 @@ scoreboard objectives add brownie trigger
 
 scoreboard objectives add xp dummy
 scoreboard objectives add id dummy
+scoreboard objectives add pid dummy
 
 scoreboard objectives add jointimer dummy
 
