@@ -44,7 +44,7 @@ execute as @s[tag=!game,tag=!s2,tag=s2b] unless entity @s[nbt={Inventory:[{Slot:
 #Sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!s2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:anvil"}]}] run function custom:shop/buttons/deso/s2/buy
 #zu wenig Coins für Waffe
-execute as @s[tag=!game,scores={Coins=..4999},tag=!s2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:anvil"}]}] run function custom:shop/buttons/deso/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!s2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:anvil"}]}] run function custom:shop/buttons/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 3
 #Sound bereits ausgewählt
@@ -54,7 +54,7 @@ execute as @s[tag=!game,tag=!s3,tag=s3b] unless entity @s[nbt={Inventory:[{Slot:
 #Sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!s3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:ender_pearl"}]}] run function custom:shop/buttons/deso/s3/buy
 #zu wenig Coins für Waffe
-execute as @s[tag=!game,scores={Coins=..4999},tag=!s3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:ender_pearl"}]}] run function custom:shop/buttons/deso/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!s3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:ender_pearl"}]}] run function custom:shop/buttons/lesscoins
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 4
 #Sound bereits ausgewählt
@@ -64,7 +64,7 @@ execute as @s[tag=!game,tag=!s4,tag=s4b] unless entity @s[nbt={Inventory:[{Slot:
 #Sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!s4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:iron_block"}]}] run function custom:shop/buttons/deso/s4/buy
 #zu wenig Coins für Waffe
-execute as @s[tag=!game,scores={Coins=..4999},tag=!s4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:iron_block"}]}] run function custom:shop/buttons/deso/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!s4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:iron_block"}]}] run function custom:shop/buttons/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 5
 #Sound bereits ausgewählt
@@ -74,7 +74,7 @@ execute as @s[tag=!game,tag=!s5,tag=s5b] unless entity @s[nbt={Inventory:[{Slot:
 #Sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!s5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:wither_skeleton_skull"}]}] run function custom:shop/buttons/deso/s5/buy
 #zu wenig Coins für Waffe
-execute as @s[tag=!game,scores={Coins=..4999},tag=!s5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:wither_skeleton_skull"}]}] run function custom:shop/buttons/deso/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!s5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:wither_skeleton_skull"}]}] run function custom:shop/buttons/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 6
 #Sound bereits ausgewählt
@@ -84,6 +84,6 @@ execute as @s[tag=!game,tag=!s6,tag=s6b] unless entity @s[nbt={Inventory:[{Slot:
 #Sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!s6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:dragon_head"}]}] run function custom:shop/buttons/deso/s6/buy
 #zu wenig Coins für Waffe
-execute as @s[tag=!game,scores={Coins=..4999},tag=!s6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:dragon_head"}]}] run function custom:shop/buttons/deso/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!s6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:dragon_head"}]}] run function custom:shop/buttons/lesscoins
 
 execute as @s[tag=!game] unless entity @s[nbt={Inventory:[{Slot:9b, id:"minecraft:red_stained_glass_pane"}]}] run function custom:shop/shop/initshop
