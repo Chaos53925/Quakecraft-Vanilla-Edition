@@ -1,2 +1,2 @@
-execute as @s run tellraw @a[tag=pay.sender] [{"translate":"pay.okplayer"},{"selector":"@s"}]
+execute as @s run tellraw @a[tag=pay.sender] [{"translate":"pay.okplayer","color": "yellow"},{"selector":"@s","color": "green"}]
 scoreboard players operation @a[tag=pay.sender] pid = @a[tag=pay.sender] pay
