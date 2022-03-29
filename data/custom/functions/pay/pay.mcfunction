@@ -5,5 +5,5 @@ tellraw @p[tag=pay.target] [{"translate":"pay.get.1","color":"yellow"},{"text":"
 scoreboard players operation @p[tag=pay.target] Coins += @s pay
 scoreboard players operation @s Coins -= @s pay
 
-scoreboard players reset @s pay
-scoreboard players reset @s pid
+scoreboard players set @s pay -1
+scoreboard players set @s pid 0

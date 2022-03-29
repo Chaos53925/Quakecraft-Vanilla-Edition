@@ -1,3 +1,3 @@
-tellraw @s {"text":""}
-scoreboard players reset @s pay
-scoreboard players reset @s pid
+tellraw @s {"text":"reset"}
+scoreboard players set @s pay -1
+scoreboard players set @s pid 0
