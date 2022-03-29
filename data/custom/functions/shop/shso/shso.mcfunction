@@ -44,7 +44,7 @@ execute as @s[tag=!game,tag=!r2,tag=r2b] unless entity @s[nbt={Inventory:[{Slot:
 #sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!r2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:bow"}]}] run function custom:shop/buttons/shso/r2/buy
 #zu wenig Coins für Sound
-execute as @s[tag=!game,scores={Coins=..4999},tag=!r2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:bow"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!r2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:bow"}]}] run function custom:shop/buttons/shso/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 3
 #sound bereits ausgewählt
@@ -54,7 +54,7 @@ execute as @s[tag=!game,tag=!r3,tag=r3b] unless entity @s[nbt={Inventory:[{Slot:
 #sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!r3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:blaze_powder"}]}] run function custom:shop/buttons/shso/r3/buy
 #zu wenig Coins für Sound
-execute as @s[tag=!game,scores={Coins=..4999},tag=!r3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:blaze_powder"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!r3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:blaze_powder"}]}] run function custom:shop/buttons/shso/lesscoins
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 4
 #sound bereits ausgewählt
@@ -64,7 +64,7 @@ execute as @s[tag=!game,tag=!r4,tag=r4b] unless entity @s[nbt={Inventory:[{Slot:
 #sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!r4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:firework_star"}]}] run function custom:shop/buttons/shso/r4/buy
 #zu wenig Coins für Sound
-execute as @s[tag=!game,scores={Coins=..4999},tag=!r4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:firework_star"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!r4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:firework_star"}]}] run function custom:shop/buttons/shso/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 5
 #sound bereits ausgewählt
@@ -74,7 +74,7 @@ execute as @s[tag=!game,tag=!r5,tag=r5b] unless entity @s[nbt={Inventory:[{Slot:
 #sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!r5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:tnt"}]}] run function custom:shop/buttons/shso/r5/buy
 #zu wenig Coins für Sound
-execute as @s[tag=!game,scores={Coins=..4999},tag=!r5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:tnt"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!r5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:tnt"}]}] run function custom:shop/buttons/shso/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #Sound 6
 #sound bereits ausgewählt
@@ -84,6 +84,6 @@ execute as @s[tag=!game,tag=!r6,tag=r6b] unless entity @s[nbt={Inventory:[{Slot:
 #sound kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!r6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:magma_cream"}]}] run function custom:shop/buttons/shso/r6/buy
 #zu wenig Coins für Sound
-execute as @s[tag=!game,scores={Coins=..4999},tag=!r6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:magma_cream"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!r6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:magma_cream"}]}] run function custom:shop/buttons/shso/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 execute as @s[tag=!game] unless entity @s[nbt={Inventory:[{Slot:9b, id:"minecraft:red_stained_glass_pane"}]}] run function custom:shop/shop/initshop

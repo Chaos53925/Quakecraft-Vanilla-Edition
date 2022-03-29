@@ -43,7 +43,7 @@ execute as @s[tag=!game,tag=!p2,tag=p2b] unless entity @s[nbt={Inventory:[{Slot:
 #pbuttons kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!p2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:heart_of_the_sea"}]}] run function custom:shop/buttons/shpa/p2/buy
 #zu wenig Coins für pbuttons
-execute as @s[tag=!game,scores={Coins=..4999},tag=!p2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:heart_of_the_sea"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!p2b] unless entity @s[nbt={Inventory:[{Slot:11b, id:"minecraft:heart_of_the_sea"}]}] run function custom:shop/buttons/shpa/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #pbuttons 3
 #pbuttons bereits ausgewählt
@@ -53,7 +53,7 @@ execute as @s[tag=!game,tag=!p3,tag=p3b] unless entity @s[nbt={Inventory:[{Slot:
 #pbuttons kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!p3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:composter"}]}] run function custom:shop/buttons/shpa/p3/buy
 #zu wenig Coins für pbuttons
-execute as @s[tag=!game,scores={Coins=..4999},tag=!p3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:composter"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!p3b] unless entity @s[nbt={Inventory:[{Slot:12b, id:"minecraft:composter"}]}] run function custom:shop/buttons/shpa/lesscoins
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #pbuttons 4
 #pbuttons bereits ausgewählt
@@ -63,7 +63,7 @@ execute as @s[tag=!game,tag=!p4,tag=p4b] unless entity @s[nbt={Inventory:[{Slot:
 #pbuttons kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!p4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:diamond_sword"}]}] run function custom:shop/buttons/shpa/p4/buy
 #zu wenig Coins für pbuttons
-execute as @s[tag=!game,scores={Coins=..4999},tag=!p4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:diamond_sword"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!p4b] unless entity @s[nbt={Inventory:[{Slot:13b, id:"minecraft:diamond_sword"}]}] run function custom:shop/buttons/shpa/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #pbuttons 5
 #pbuttons bereits ausgewählt
@@ -73,7 +73,7 @@ execute as @s[tag=!game,tag=!p5,tag=p5b] unless entity @s[nbt={Inventory:[{Slot:
 #pbuttons kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!p5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:enchanted_book"}]}] run function custom:shop/buttons/shpa/p5/buy
 #zu wenig Coins für pbuttons
-execute as @s[tag=!game,scores={Coins=..4999},tag=!p5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:enchanted_book"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!p5b] unless entity @s[nbt={Inventory:[{Slot:14b, id:"minecraft:enchanted_book"}]}] run function custom:shop/buttons/shpa/lesscoins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #pbuttons 6
 #pbuttons bereits ausgewählt
@@ -83,6 +83,6 @@ execute as @s[tag=!game,tag=!p6,tag=p6b] unless entity @s[nbt={Inventory:[{Slot:
 #pbuttons kaufen.
 execute as @s[tag=!game,scores={Coins=5000..},tag=!p6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:soul_torch"}]}] run function custom:shop/buttons/shpa/p6/buy
 #zu wenig Coins für pbuttons
-execute as @s[tag=!game,scores={Coins=..4999},tag=!p6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:soul_torch"}]}] run function custom:shop/buttons/lesscoins
+execute as @s[tag=!game,scores={Coins=..4999},tag=!p6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:soul_torch"}]}] run function custom:shop/buttons/shpa/lesscoins
 
 execute as @s[tag=!game] unless entity @s[nbt={Inventory:[{Slot:9b, id:"minecraft:red_stained_glass_pane"}]}] run function custom:shop/shop/initshop

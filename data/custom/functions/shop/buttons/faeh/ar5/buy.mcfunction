@@ -1,7 +1,7 @@
 tellraw @s {"translate":"shop.faeh.buy"}
 
 tag @s add ar5b
-scoreboard players remove @s Coins 1000
+scoreboard players remove @s Coins 10000
 tag @s remove ar1
 tag @s remove ar2
 tag @s remove ar3
