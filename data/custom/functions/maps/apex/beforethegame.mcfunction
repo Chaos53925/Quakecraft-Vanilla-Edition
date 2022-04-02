@@ -51,8 +51,9 @@ execute unless score #apex apexlobby = #apex apexvote if score #apex apexlobby m
 execute unless score #apex apexlobby = #apex apexvote if score #apex apexlobby matches 7.. if score #apexmin game matches ..0 if score #apexsek game matches ..0 run scoreboard players set #apexgame game 1
 execute unless score #apex apexlobby = #apex apexvote if score #apex apexlobby matches 7.. if score #apexmin game matches ..0 if score #apexsek game matches ..0 run scoreboard players set #apex game 0
 
-execute if score #apex apexlobby = #apex apexvote if score #apex apexlobby matches 7.. if score #apexmin game matches 0.. if score #apexsek game matches 31.. run scoreboard players set #apexbar game 30
-execute if score #apex apexlobby = #apex apexvote if score #apex apexlobby matches 7.. if score #apexmin game matches 0.. if score #apexsek game matches 31.. run scoreboard players set #apexsek game 30
+execute if score #apex apexlobby matches 7.. if score #apexmin game matches 0.. if score #apexsek game matches 31.. run scoreboard players set #apexbar game 30
+execute if score #apex apexlobby matches 7.. if score #apexmin game matches 0.. if score #apexsek game matches 31.. run scoreboard players set #apexsek game 30
+execute if score #apex apexlobby matches 7.. if score #apexmin game matches 0.. if score #apexsek game matches 31.. run scoreboard players set #apexmin game 0
 
 execute if score #apex apexlobby = #apex apexvote if score #apex apexlobby matches 2.. if score #apexmin game matches ..0 if score #apexsek game matches ..0 run tellraw @a[team=apex] {"translate":"map.start.quick","color":"yellow"}
 execute if score #apex apexlobby = #apex apexvote if score #apex apexlobby matches 2.. if score #apexmin game matches ..0 if score #apexsek game matches ..0 run scoreboard players set #apexgame game 1
