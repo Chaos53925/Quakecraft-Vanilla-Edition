@@ -10,4 +10,4 @@ tag @s remove e5
 tag @s add e6
 execute as @s run function custom:shop/kipa/initkipa
 
-playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

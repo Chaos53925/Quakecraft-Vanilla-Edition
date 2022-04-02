@@ -16,7 +16,7 @@ function custom:init/actionbar
 tellraw @a[tag=op] {"text":"+-----------------------------------+","color":"white"}
 tellraw @a[tag=op] [{"text":"Initialisierung läuft.","color":"yellow"},{"text":"\n"},{"text":"Dauer:","color":"yellow"},{"text":" ca. ","color":"green"},{"text":"10 ","color":"gold"},{"text":"Sekunden.","color":"green"}]
 tellraw @a[tag=op] {"text":"+-----------------------------------+","color":"white"}
-execute as @a[tag=op] run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute as @a[tag=op] run execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
 
 schedule function custom:init/maps 1s
 schedule function custom:init/teams 2s

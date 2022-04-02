@@ -16,4 +16,4 @@ tag @s remove slv6
 tag @s add wlv1
 tag @s[tag=ar7] add ar4
 tag @s[tag=ar7] remove ar7
-playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

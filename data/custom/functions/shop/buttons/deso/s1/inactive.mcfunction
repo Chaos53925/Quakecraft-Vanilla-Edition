@@ -7,4 +7,4 @@ tag @s remove s4
 tag @s remove s5
 tag @s remove s6
 tag @s add s1
-playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

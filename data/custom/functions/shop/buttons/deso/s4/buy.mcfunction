@@ -10,4 +10,4 @@ tag @s remove s6
 tag @s add s4
 execute as @s run function custom:shop/deso/initdeso
 
-playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

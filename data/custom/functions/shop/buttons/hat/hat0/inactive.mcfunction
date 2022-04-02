@@ -15,4 +15,4 @@ tag @s remove hat11
 tag @s remove hat12
 tag @s add hat0
 
-playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
