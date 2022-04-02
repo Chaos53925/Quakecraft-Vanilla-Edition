@@ -17,3 +17,4 @@ tag @s remove play
 item replace entity @a[team=lostcity] hotbar.8 with minecraft:knowledge_book{Recipes: ["minecraft:book"], display: {Name: '{"translate":"map.before.leave","color":"dark_red"}'}}
 scoreboard players set @s lostcityjoin 0
 kill @s
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
