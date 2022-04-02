@@ -1,7 +1,6 @@
 execute unless block -21 22 130 minecraft:light_weighted_pressure_plate[power=0] positioned -20.5 22 130.5 as @a[distance=..0.5] run tag @s add jumpandrun
 execute as @a[tag=jumpandrun] run tp @s -21 15 130 -90 0
 execute as @a[tag=jumpandrun] run tellraw @s [{"translate":"journey.jar.end","color":"yellow"}]
-execute as @a[tag=jumpandrunwide] at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
 execute as @a[tag=jumpandrun] run tag @s remove jumpandrun
 
 execute unless block -29 14 130 minecraft:heavy_weighted_pressure_plate[power=0] positioned -28.5 14 130.5 as @a[distance=..0.5,tag=!jnr] run tellraw @s [{"translate":"journey.jar.start","color":"yellow"}]
@@ -38,7 +37,6 @@ execute if block 24 22 176 minecraft:light_weighted_pressure_plate[power=0] posi
 execute unless block -11 22 198 minecraft:light_weighted_pressure_plate[power=0] positioned -10.5 22 198.5 as @a[distance=..0.5] run tag @s add jumpandrunwide
 execute as @a[tag=jumpandrunwide] run tp @s -11 15 198 180 0
 execute as @a[tag=jumpandrunwide] run tellraw @s [{"translate":"journey.jar.end","color":"yellow"}]
-execute as @a[tag=jumpandrunwide] at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
 execute as @a[tag=jumpandrunwide] run tag @s remove jumpandrunwide
 
 execute unless block -11 14 206 minecraft:heavy_weighted_pressure_plate[power=0] positioned -10.5 14 206.5 as @a[tag=deu,distance=..0.5,tag=!jnrw] run tellraw @s [{"translate":"journey.jar.start","color":"yellow"}]
