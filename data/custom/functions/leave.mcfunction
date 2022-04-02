@@ -1,5 +1,4 @@
 scoreboard players set @s book 0
-playsound minecraft:block.note_block.pling master @s[tag=!soundoff,team=!Lobby] ~ ~ ~ 0.5 2
 execute if entity @s[team=apex] run tellraw @a[team=apex] [{"selector":"@s","color":"red"},{"translate":"join.leave.map","color":"yellow"}]
 execute if entity @s[team=candy] run tellraw @a[team=candy] [{"selector":"@s","color":"aqua"},{"translate":"join.leave.map","color":"yellow"}]
 execute if entity @s[team=desert] run tellraw @a[team=desert] [{"selector":"@s","color":"gold"},{"translate":"join.leave.map","color":"yellow"}]
@@ -30,9 +29,10 @@ execute as @a[team=candy,tag=candyvote] run scoreboard players add #candy candyv
 scoreboard players set #apex apexvote 0
 execute as @a[team=apex,tag=apexvote] run scoreboard players add #apex apexvote 1
 
+spawnpoint @s 10 17 146
+tp @s 10 17 146 -90 0
 tag @s remove game
 clear @s
 execute as @s run function custom:shop/main/initmain
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff,team=!Lobby] ~ ~ ~ 0.5 2
 team join Lobby @s
-spawnpoint @s 10 17 146
-tp @s 10 17 146 -90 0
