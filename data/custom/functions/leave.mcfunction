@@ -1,4 +1,5 @@
 scoreboard players set @s book 0
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff,team=!Lobby] ~ ~ ~ 0.5 2
 execute if entity @s[team=apex] run tellraw @a[team=apex] [{"selector":"@s","color":"red"},{"translate":"join.leave.map","color":"yellow"}]
 execute if entity @s[team=candy] run tellraw @a[team=candy] [{"selector":"@s","color":"aqua"},{"translate":"join.leave.map","color":"yellow"}]
 execute if entity @s[team=desert] run tellraw @a[team=desert] [{"selector":"@s","color":"gold"},{"translate":"join.leave.map","color":"yellow"}]
