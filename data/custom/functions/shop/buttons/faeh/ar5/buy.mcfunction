@@ -13,4 +13,4 @@ tag @s remove mn1
 tag @s add ar5
 execute as @s run function custom:shop/faeh/initfaeh
 
-execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2

@@ -8,4 +8,4 @@ tag @s remove p5
 tag @s add p6
 execute as @s run function custom:shop/shpa/initshpa
 
-execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2

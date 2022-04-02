@@ -18,4 +18,4 @@ tellraw @s [{"score":{"name":"@s","objective":"dkills"},"color":"green"},{"text"
 tellraw @s {"text":"","color":"gray"}
 
 scoreboard players set @s stats 0
-execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2

@@ -17,4 +17,4 @@ tag @s[tag=ar7] add ar4
 tag @s[tag=ar7] remove ar7
 execute as @s run function custom:shop/weap/initweap
 
-execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
+execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2

@@ -34,5 +34,5 @@ item replace entity @s[tag=!game,tag=set] hotbar.7 with air
 execute as @s[tag=!game,tag=set,tag=man] unless entity @s[nbt={Inventory:[{Slot:21b, id:"minecraft:redstone"}]}] run function custom:shop/buttons/set/immuneon
 execute as @s[tag=!game,tag=set,tag=!man] unless entity @s[nbt={Inventory:[{Slot:21b, id:"minecraft:slime_ball"}]}] run function custom:shop/buttons/set/immuneoff
 execute as @s[tag=!game,tag=set,tag=soundsoff] unless entity @s[nbt={Inventory:[{Slot:23b, id:"minecraft:redstone"}]}] run function custom:shop/buttons/set/soundon
-execute as @s[tag=!game,tag=set,tag=!soundsoff] unless entity @s[nbt={Inventory:[{Slot:23b, id:"minecraft:slime_ball"}]}] run function custom:shop/buttons/set/soundoff
+execute as @s[tag=!game,tag=set,tag=!soundsoff] unless entity @s[nbt={Inventory:[{Slot:23b, id:"minecraft:slime_ball"}]}] run function custom:shop/buttons/set/soundsoff
 execute as @s[tag=!game,tag=set] unless entity @s[nbt={Inventory:[{Slot:9b, id:"minecraft:red_stained_glass_pane"}]}] run function custom:shop/main/initmain
