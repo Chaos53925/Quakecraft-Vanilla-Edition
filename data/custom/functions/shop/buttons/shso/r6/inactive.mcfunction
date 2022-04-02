@@ -7,3 +7,5 @@ tag @s remove r4
 tag @s remove r5
 tag @s add r6
 execute as @s run function custom:shop/shso/initshso
+
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

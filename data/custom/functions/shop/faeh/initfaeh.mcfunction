@@ -59,10 +59,12 @@ execute as @s[tag=!game,tag=ar6b,tag=!ar6] unless entity @s[nbt={Inventory:[{Slo
 execute as @s[tag=!game,tag=ar6,tag=ar6b] unless entity @s[nbt={Inventory:[{Slot:15b, id:"minecraft:potion"}]}] run item replace entity @s inventory.6 with potion{Enchantments:[{}],display:{Name:'{"translate":"shop.faeh.potion"}'},Potion:"minecraft:invisibility"}
 
 #persönliche spezialeffekte (keine zusätzlichen sprachen)
-execute as @s[tag=!game,tag=!mn1,tag=minen] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{display: {Name: '{"translate":"shop.faeh.mine"}'}}
 execute as @s[tag=!game,tag=!br1,tag=brownie] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:brown_dye"}]}] run item replace entity @s inventory.8 with minecraft:brown_dye{display: {Name: '{"text":"Brownie-Style"}'}}
-execute as @s[tag=!game,tag=mn1,tag=minen] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{Enchantments:[{}],display: {Name: '{"translate":"shop.faeh.mine"}'}}
 execute as @s[tag=!game,tag=br1,tag=brownie] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:brown_dye"}]}] run item replace entity @s inventory.8 with minecraft:brown_dye{Enchantments:[{}],display: {Name: '{"text":"Brownie-Style"}'}}
+
+execute as @s[tag=!game,tag=mn1,tag=minen] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{Enchantments:[{}],display: {Name: '{"translate":"shop.faeh.mine"}'}}
+execute as @s[tag=!game,tag=!mn1,tag=minen] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{display: {Name: '{"translate":"shop.faeh.mine"}'}}
+
 execute as @s[tag=!game,tag=!special] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run item replace entity @s inventory.8 with minecraft:barrier{display: {Name: '{"translate":"shop.faeh.barrier.special"}'}}
 
 tag @s remove shop

@@ -14,3 +14,5 @@ tag @s remove hat11
 tag @s remove hat12
 tag @s add hat5
 execute as @s run function custom:shop/hat/inithat
+
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

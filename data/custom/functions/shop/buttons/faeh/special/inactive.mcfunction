@@ -12,3 +12,5 @@ tag @s[tag=special,tag=brownie] remove mn1
 tag @s[tag=special,tag=minen] remove br1
 tag @s[tag=special,tag=minen] add mn1
 execute as @s run function custom:shop/faeh/initfaeh
+
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

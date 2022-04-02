@@ -7,3 +7,5 @@ tag @s remove p4
 tag @s remove p5
 tag @s remove p6
 tag @s add p1
+
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2

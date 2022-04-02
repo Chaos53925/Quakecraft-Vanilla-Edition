@@ -11,3 +11,5 @@ tag @s remove br1
 tag @s remove mn1
 
 tag @s add ar1
+
+playsound minecraft:block.note_block.pling master @s[tag=!soundoff] ~ ~ ~ 0.5 2
