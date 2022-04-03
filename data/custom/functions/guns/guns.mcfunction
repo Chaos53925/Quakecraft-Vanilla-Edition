@@ -1,5 +1,5 @@
 tag @a[tag=alwaysShoot] add canShoot
-execute as @r[scores={rightclick=1..},tag=canShoot] run function custom:dynamic_id/init
+execute as @r[scores={rightclick=1..},tag=canShoot] run function custom:unique_id/init
 execute as @a[scores={rightclick=1..},tag=canShoot] run tag @s add break
 
 #Waffen
@@ -32,7 +32,7 @@ scoreboard players set @a railgun 0
 scoreboard players set @a streak 0
 scoreboard players set @a particleC 0
 scoreboard players set @a rightclick 0
-scoreboard players reset * dID
+scoreboard players reset * uID
 scoreboard players set @a[tag=die] kstreak 0
 scoreboard players set @a[tag=die] railguntimer 30
 scoreboard players set @a[tag=die] shotguntimer 110

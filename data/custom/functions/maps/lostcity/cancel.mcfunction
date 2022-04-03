@@ -8,7 +8,7 @@ scoreboard players set #lostcity lostcityvote 0
 scoreboard players set #lostcityquick game 0
 scoreboard players set @a[team=lostcity] Coin 0
 scoreboard players reset * LostcityKills
-scoreboard players reset @a[team=lostcity] dID
+scoreboard players reset @a[team=lostcity] uID
 scoreboard players set #lostcity game 0
 scoreboard players set #lostcitysek game 0
 scoreboard players set #lostcitymin game 0

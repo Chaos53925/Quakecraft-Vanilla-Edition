@@ -1,4 +1,4 @@
-scoreboard objectives add dID dummy
+scoreboard objectives add uID dummy
 scoreboard objectives add spawn dummy
 scoreboard objectives add railgun dummy
 scoreboard objectives add particleC dummy

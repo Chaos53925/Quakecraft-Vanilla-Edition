@@ -8,7 +8,7 @@ scoreboard players set #desert desertvote 0
 scoreboard players set #desertquick game 0
 scoreboard players set @a[team=desert] Coin 0
 scoreboard players reset * DesertKills
-scoreboard players reset @a[team=desert] dID
+scoreboard players reset @a[team=desert] uID
 scoreboard players set #desert game 0
 scoreboard players set #desertsek game 0
 scoreboard players set #desertmin game 0

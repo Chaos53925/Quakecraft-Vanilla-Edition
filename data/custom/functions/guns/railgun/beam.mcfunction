@@ -8,22 +8,22 @@ scoreboard players set @s[scores={db=1}] dd 25
 scoreboard players set @s[scores={db=2}] dd 50
 scoreboard players set @s[scores={db=3}] dd 75
 #Killnachricht
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run tellraw @a[distance=..150,team=!Lobby] {"selector":"@s","color":"blue","extra":[{"text":" >>> ","color":"gold"},{"selector":"@e[distance=0,limit=1]","color":"dark_blue"}]}
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand,tag=headshot] dID run function custom:guns/beam/headshot
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run function custom:guns/beam/kill
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tellraw @a[distance=..150,team=!Lobby] {"selector":"@s","color":"blue","extra":[{"text":" >>> ","color":"gold"},{"selector":"@e[distance=0,limit=1]","color":"dark_blue"}]}
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=headshot] uID run function custom:guns/beam/headshot
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function custom:guns/beam/kill
 #distanz reset
 scoreboard players reset @s da
 scoreboard players reset @s dd
 #Kills und Coins eintagen
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run function custom:guns/beam/scores
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function custom:guns/beam/scores
 #Todessounds
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run function custom:guns/beam/deathsound
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function custom:guns/beam/deathsound
 #Killeffekte
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run function custom:guns/beam/killeffect
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function custom:guns/beam/killeffect
 #Getroffenen Gegner killen
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run tag @e[distance=0,limit=1,type=!armor_stand] add immune
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tag @e[distance=0,limit=1,type=!armor_stand] add immune
 execute as @e[distance=0,limit=1,type=!armor_stand] run scoreboard players operation @s immunity = @s immune
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run tag @e[distance=0,limit=1,type=!armor_stand] add die
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run tp @e[distance=0,limit=1,type=!armor_stand] ~ 150 ~
-execute unless score @s dID = @e[distance=0,limit=1,type=!armor_stand] dID run tag @e[distance=0,limit=1,type=!armor_stand] remove hit
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tag @e[distance=0,limit=1,type=!armor_stand] add die
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tp @e[distance=0,limit=1,type=!armor_stand] ~ 150 ~
+execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tag @e[distance=0,limit=1,type=!armor_stand] remove hit
 kill @e[tag=die]

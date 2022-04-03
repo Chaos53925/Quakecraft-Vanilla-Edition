@@ -58,7 +58,7 @@ scoreboard players set #apexquick game 0
 scoreboard players set @a[team=apex] Coin 0
 scoreboard players set @a[team=apex] kstreak 0
 scoreboard players reset * ApexKills
-scoreboard players reset @a[team=apex] dID
+scoreboard players reset @a[team=apex] uID
 scoreboard players reset @a[team=apex] ApexTode
 tag @a[team=apex] remove apexvote
 clear @a[team=apex]

@@ -8,7 +8,7 @@ scoreboard players set #apex apexvote 0
 scoreboard players set #apexquick game 0
 scoreboard players set @a[team=apex] Coin 0
 scoreboard players reset * ApexKills
-scoreboard players reset @a[team=apex] dID
+scoreboard players reset @a[team=apex] uID
 scoreboard players set #apex game 0
 scoreboard players set #apexsek game 0
 scoreboard players set #apexmin game 2

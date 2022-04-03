@@ -57,7 +57,7 @@ scoreboard players set #lostcityquick game 0
 scoreboard players set @a[team=lostcity] Coin 0
 scoreboard players set @a[team=lostcity] kstreak 0
 scoreboard players reset * LostcityKills
-scoreboard players reset @a[team=lostcity] dID
+scoreboard players reset @a[team=lostcity] uID
 scoreboard players reset @a[team=lostcity] LostcityTode
 clear @a[team=lostcity]
 tag @a[team=lostcity] remove lostcityvote

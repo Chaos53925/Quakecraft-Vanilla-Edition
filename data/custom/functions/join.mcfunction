@@ -23,7 +23,7 @@ bossbar set minecraft:lostcityprogress players
 
 scoreboard players set @s Coin 0
 scoreboard players reset @s ApexKills
-scoreboard players reset @s dID
+scoreboard players reset @s uID
 scoreboard players reset @s ApexTode
 scoreboard players reset @s CandyKills
 scoreboard players reset @s CandyTode

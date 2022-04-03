@@ -8,7 +8,7 @@ scoreboard players set #candy candyvote 0
 scoreboard players set #candyquick game 0
 scoreboard players set @a[team=candy] Coin 0
 scoreboard players reset * CandyKills
-scoreboard players reset @a[team=candy] dID
+scoreboard players reset @a[team=candy] uID
 scoreboard players set #candy game 0
 scoreboard players set #candysek game 0
 scoreboard players set #candymin game 0

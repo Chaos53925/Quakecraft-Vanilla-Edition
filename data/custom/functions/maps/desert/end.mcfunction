@@ -57,7 +57,7 @@ scoreboard players set #desertquick game 0
 scoreboard players set @a[team=desert] Coin 0
 scoreboard players set @a[team=desert] kstreak 0
 scoreboard players reset * DesertKills
-scoreboard players reset @a[team=desert] dID
+scoreboard players reset @a[team=desert] uID
 scoreboard players reset @a[team=desert] DesertTode
 tag @a[team=desert] remove desertvote
 clear @a[team=desert]

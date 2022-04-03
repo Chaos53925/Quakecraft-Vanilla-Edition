@@ -57,7 +57,7 @@ scoreboard players set #candyquick game 0
 scoreboard players set @a[team=candy] Coin 0
 scoreboard players set @a[team=candy] kstreak 0
 scoreboard players reset * CandyKills
-scoreboard players reset @a[team=candy] dID
+scoreboard players reset @a[team=candy] uID
 scoreboard players reset @a[team=candy] CandyTode
 tag @a[team=candy] remove candyvote
 clear @a[team=candy]
