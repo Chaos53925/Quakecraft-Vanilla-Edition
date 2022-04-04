@@ -39,7 +39,7 @@ clear @s
 tp @s 10 17 146 -90 0
 tag @s remove play
 tag @s remove game
-execute as @s run function custom:shop/main/initmain
+execute as @s run function shop:main/initmain
 team join Lobby @s
 
 

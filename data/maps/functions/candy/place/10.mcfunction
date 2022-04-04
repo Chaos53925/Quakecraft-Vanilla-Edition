@@ -1,0 +1,9 @@
+
+execute unless entity @p[team=candy,tag=c10] as @a[team=candy,tag=!c1,tag=!c2,tag=!c3,tag=!c4,tag=!c5,tag=!c6,tag=!c7,tag=!c8,tag=!c9] if score @s ApexKills = #temp candyplace run tag @s add c10
+execute as @a[team=candy,tag=c10] run scoreboard players add #temp candytag 1
+execute if score #temp candytag matches 2.. run tag @r[team=candy,tag=c10,limit=1] add c10a
+execute if score #temp candytag matches 2.. run tag @a[team=candy,tag=!c10a] remove c10
+tag @a[team=candy] remove c10a
+scoreboard players set #temp candytag 0
+scoreboard players remove #temp candyplace 1
+execute if score #temp candyplace matches 0.. run function maps:candy/place/10

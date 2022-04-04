@@ -33,6 +33,6 @@ spawnpoint @s 10 17 146
 tp @s 10 17 146 -90 0
 tag @s remove game
 clear @s
-execute as @s run function custom:shop/main/initmain
+execute as @s run function shop:main/initmain
 playsound minecraft:block.note_block.pling master @s[tag=!soundsoff,team=!Lobby] ~ ~ ~ 0.5 2
 team join Lobby @s

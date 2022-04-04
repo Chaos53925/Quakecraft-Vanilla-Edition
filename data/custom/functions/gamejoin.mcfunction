@@ -1,8 +1,8 @@
 
-execute as @a[team=Lobby,scores={apexjoin=1}] if score #apexgame game matches 0 unless score #apex apexlobby matches 10 run function custom:maps/apex/join
-execute as @a[team=Lobby,scores={lostcityjoin=1}] if score #lostcitygame game matches 0 unless score #lostcity lostcitylobby matches 10 run function custom:maps/lostcity/join
-execute as @a[team=Lobby,scores={desertjoin=1}] if score #desertgame game matches 0 unless score #desert desertlobby matches 10 run function custom:maps/desert/join
-execute as @a[team=Lobby,scores={candyjoin=1}] if score #candygame game matches 0 unless score #candy candylobby matches 10 run function custom:maps/candy/join
+execute as @a[team=Lobby,scores={apexjoin=1}] if score #apexgame game matches 0 unless score #apex apexlobby matches 10 run function maps:apex/join
+execute as @a[team=Lobby,scores={lostcityjoin=1}] if score #lostcitygame game matches 0 unless score #lostcity lostcitylobby matches 10 run function maps:lostcity/join
+execute as @a[team=Lobby,scores={desertjoin=1}] if score #desertgame game matches 0 unless score #desert desertlobby matches 10 run function maps:desert/join
+execute as @a[team=Lobby,scores={candyjoin=1}] if score #candygame game matches 0 unless score #candy candylobby matches 10 run function maps:candy/join
 
 execute as @a[scores={apexjoin=1}] unless score #apexgame game matches 0 run tellraw @s [{"translate":"lobby.game.running","color":"red"}]
 execute as @a[scores={lostcityjoin=1}] unless score #lostcitygame game matches 0 run tellraw @s [{"translate":"lobby.game.running","color":"red"}]
