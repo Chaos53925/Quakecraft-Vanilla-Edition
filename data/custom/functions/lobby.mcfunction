@@ -13,7 +13,9 @@ execute store result bossbar minecraft:playerbar value run scoreboard players ge
 bossbar set playerbar name [{"text":"Quakecraft Vanilla Edition ","color":"white"},{"text":"|","color":"gold"},{"text":" Online: ","color":"yellow"},{"score":{"name":"#player","objective":"game"},"color":"aqua"},{"text":"/","color":"gold"},{"text":"60","color":"aqua"}]
 bossbar set minecraft:playerbar players @a[team=Lobby]
 
-effect give @a saturation 20 9 true
+execute store result score #difficulty temp run difficulty
+execute if score #difficulty temp matches 1.. run effect give @a saturation 20 9 true
+execute if score #difficulty temp matches 0 run effect clear @a saturation
 tp @a[team=] 10 17 146 -90.0 0.0
 team join Lobby @a[team=]
 
