@@ -36,6 +36,8 @@ execute as @a unless score @s id = @s id store result score @s id run scoreboard
 
 kill @e[type=item,tag=!immune]
 execute as @a[team=] run function shop:main/initmain
+tp @a[team=] 10 17 146 -90.0 0.0
+team join Lobby @a[team=]
 gamemode adventure @a[team=!Build]
 
 execute as @a[team=Lobby,scores={book=1..},tag=!play] unless entity @s[nbt={Inventory:[{Slot:8b, id:"minecraft:knowledge_book"}]}] run function custom:leave
