@@ -4,8 +4,7 @@ scoreboard objectives add effecttimer dummy
 scoreboard objectives add immunity dummy
 scoreboard objectives add noreload dummy
 scoreboard objectives add effectsek dummy
-scoreboard objectives add brst dummy
-scoreboard objectives add brownie trigger
+scoreboard objectives add karma dummy
 
 scoreboard objectives add xp dummy
 scoreboard objectives add id dummy

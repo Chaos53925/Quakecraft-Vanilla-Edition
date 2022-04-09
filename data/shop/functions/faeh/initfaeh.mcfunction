@@ -65,6 +65,9 @@ execute as @s[tag=!game,tag=br1,tag=brownie] unless entity @s[nbt={Inventory:[{S
 execute as @s[tag=!game,tag=mn1,tag=minen] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{Enchantments:[{}],display: {Name: '{"translate":"shop.faeh.mine"}'}}
 execute as @s[tag=!game,tag=!mn1,tag=minen] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:tnt"}]}] run item replace entity @s inventory.8 with minecraft:tnt{display: {Name: '{"translate":"shop.faeh.mine"}'}}
 
+execute as @s[tag=!game,tag=kr1,tag=instantkarma] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:totem_of_undying"}]}] run item replace entity @s inventory.8 with minecraft:totem_of_undying{Enchantments:[{}],display: {Name: '{"text":"Instant Karma"}'}}
+execute as @s[tag=!game,tag=!kr1,tag=instantkarma] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:totem_of_undying"}]}] run item replace entity @s inventory.8 with minecraft:totem_of_undying{display: {Name: '{"text":"Instant Karma"}'}}
+
 execute as @s[tag=!game,tag=!special] unless entity @s[nbt={Inventory:[{Slot:17b, id:"minecraft:barrier"}]}] run item replace entity @s inventory.8 with minecraft:barrier{display: {Name: '{"translate":"shop.faeh.barrier.special"}'}}
 
 tag @s remove shop

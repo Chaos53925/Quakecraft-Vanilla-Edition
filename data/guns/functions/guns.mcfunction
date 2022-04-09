@@ -33,6 +33,7 @@ scoreboard players set @a streak 0
 scoreboard players set @a particleC 0
 scoreboard players set @a rightclick 0
 scoreboard players reset * uID
+kill @e[tag=die]
 scoreboard players set @a[tag=die] kstreak 0
 scoreboard players set @a[tag=die] railguntimer 30
 scoreboard players set @a[tag=die] shotguntimer 110

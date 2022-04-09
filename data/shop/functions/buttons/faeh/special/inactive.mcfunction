@@ -9,7 +9,12 @@ tag @s[tag=special] remove ar6
 tag @s[tag=special] remove ar7
 tag @s[tag=special,tag=brownie] add br1
 tag @s[tag=special,tag=brownie] remove mn1
+tag @s[tag=special,tag=brownie] remove kr1
+tag @s[tag=special,tag=instantkarma] add kr1
+tag @s[tag=special,tag=instantkarma] remove mn1
+tag @s[tag=special,tag=instantkarma] remove br1
 tag @s[tag=special,tag=minen] remove br1
+tag @s[tag=special,tag=minen] remove kr1
 tag @s[tag=special,tag=minen] add mn1
 execute as @s run function shop:faeh/initfaeh
 

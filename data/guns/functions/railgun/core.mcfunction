@@ -10,7 +10,6 @@ execute if score @s railgun >= MAX railgun run scoreboard players reset @s dista
 execute as @e[dx=0,tag=!die] positioned ~-0.85 ~-0.85 ~-0.85 if entity @s[dx=0] positioned ~0.85 ~0.85 ~0.85 run function guns:core/hitbox
 execute at @e[tag=hit,tag=!immune] run function guns:railgun/beam
 
-
 execute if score @s particleC >= PARTICLES railgun run scoreboard players set @s particleC 0
 
 #Blöcke, durch die der Strahl durchgeht
