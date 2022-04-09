@@ -44,6 +44,6 @@ execute as @a[tag=die] run scoreboard players operation @s immunity = @s immune
 tag @a[tag=die] add immune
 tag @a[tag=die] remove karma
 tag @a[tag=die] remove die
-tellraw @a[tag=shoot] [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoin"},"color": "red"}]
+execute as @a[tag=shoot,scores={gCoin=1..}] run tellraw @s [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoin"},"color": "red"}]
 scoreboard players set @a gCoin 0
 tag @a remove shoot
