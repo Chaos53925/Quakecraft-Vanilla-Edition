@@ -22,7 +22,6 @@ execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run f
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/killeffect
 #Instant Karma Spezialfähigkeit
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=karma] uID run function guns:beam/karma
-tellraw @s [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoin"},"color": "red"}]
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=karma] uID run scoreboard players set @s railgun 401
 #Getroffenen Gegner killen
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tag @e[distance=0,limit=1,type=!armor_stand] add immune

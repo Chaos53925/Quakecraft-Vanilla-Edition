@@ -32,7 +32,6 @@ scoreboard players set @a railgun 0
 scoreboard players set @a streak 0
 scoreboard players set @a particleC 0
 scoreboard players set @a rightclick 0
-scoreboard players set @a gCoin 0
 scoreboard players reset * uID
 kill @e[tag=die]
 scoreboard players set @a[tag=die,tag=!karma] kstreak 0
@@ -45,3 +44,6 @@ execute as @a[tag=die] run scoreboard players operation @s immunity = @s immune
 tag @a[tag=die] add immune
 tag @a[tag=die] remove karma
 tag @a[tag=die] remove die
+tellraw @a[tag=shoot] [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoin"},"color": "red"}]
+scoreboard players set @a gCoin 0
+tag @a remove shoot

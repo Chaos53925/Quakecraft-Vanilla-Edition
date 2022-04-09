@@ -1,4 +1,5 @@
 #Partikeleffekt
+tag @s add shoot
 execute if score @s particleC matches 0 run function guns:core/particle
 scoreboard players add @s railgun 1
 scoreboard players add @s particleC 1

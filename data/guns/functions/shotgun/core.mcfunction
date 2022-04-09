@@ -1,4 +1,5 @@
 #Partikeleffekt
+tag @s add shoot
 function guns:shotgun/particle
 
 scoreboard players add @s shotgun 1
