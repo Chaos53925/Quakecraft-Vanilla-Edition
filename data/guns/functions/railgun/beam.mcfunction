@@ -16,13 +16,13 @@ scoreboard players reset @s da
 scoreboard players reset @s dd
 #Kills und Coins eintagen
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/scores
-tellraw @s [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoins"}}]
 #Todessounds
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/deathsound
 #Killeffekte
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/killeffect
 #Instant Karma Spezialfähigkeit
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=karma] uID run function guns:beam/karma
+tellraw @s [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoin"}}]
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=karma] uID run scoreboard players set @s railgun 401
 #Getroffenen Gegner killen
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tag @e[distance=0,limit=1,type=!armor_stand] add immune
