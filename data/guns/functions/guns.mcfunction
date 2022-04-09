@@ -42,4 +42,5 @@ tag @a[tag=die] remove hit
 tag @a[tag=die] remove headshot
 execute as @a[tag=die] run scoreboard players operation @s immunity = @s immune
 tag @a[tag=die] add immune
+tag @a[tag=die] remove karma
 tag @a[tag=die] remove die

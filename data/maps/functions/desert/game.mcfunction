@@ -22,7 +22,7 @@ effect give @a[team=desert] jump_boost 1 0 true
 #respawn functions
 function maps:desert/spawn
 
-execute as @a[team=desert] run function guns:reload
+execute as @a[team=desert] run function guns:reload/reload
 
 #endfunktion
 execute at @p[tag=d1,team=desert] run function maps:desert/end

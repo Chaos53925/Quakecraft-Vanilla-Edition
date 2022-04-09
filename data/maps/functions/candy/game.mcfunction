@@ -22,7 +22,7 @@ effect give @a[team=candy] jump_boost 1 0 true
 #respawn functions
 function maps:candy/spawn
 
-execute as @a[team=candy] run function guns:reload
+execute as @a[team=candy] run function guns:reload/reload
 
 #endfunktion
 execute at @p[tag=c1,team=candy] run function maps:candy/end

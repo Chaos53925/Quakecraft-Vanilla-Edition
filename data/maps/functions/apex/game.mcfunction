@@ -21,7 +21,7 @@ effect give @a[team=apex] jump_boost 1 0 true
 #respawn function
 function maps:apex/spawn
 
-execute as @a[team=apex] run function guns:reload
+execute as @a[team=apex] run function guns:reload/reload
 
 #endfunktion
 execute at @p[tag=a1,team=apex] run function maps:apex/end

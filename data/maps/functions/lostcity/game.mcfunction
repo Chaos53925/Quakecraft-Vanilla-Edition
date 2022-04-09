@@ -24,7 +24,7 @@ effect give @a[team=lostcity] jump_boost 1 0 true
 function maps:lostcity/spawn
 
 
-execute as @a[team=lostcity] run function guns:reload
+execute as @a[team=lostcity] run function guns:reload/reload
 
 #endfunktion
 execute at @a[tag=l1,team=lostcity] run function maps:lostcity/end
