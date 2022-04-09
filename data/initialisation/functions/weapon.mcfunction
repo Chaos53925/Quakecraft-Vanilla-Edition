@@ -65,7 +65,7 @@ scoreboard players set #nethergame game 0
 scoreboard players set #endgame game 0
 scoreboard objectives add Coins dummy
 scoreboard objectives add Coin dummy
-scoreboard objectives add gCoins dummy
+scoreboard objectives add gCoin dummy
 
 scoreboard objectives add shotgunshots dummy
 scoreboard objectives add shotgun dummy

@@ -32,7 +32,7 @@ scoreboard players set @a railgun 0
 scoreboard players set @a streak 0
 scoreboard players set @a particleC 0
 scoreboard players set @a rightclick 0
-scoreboard players set @a gCoins 0
+scoreboard players set @a gCoin 0
 scoreboard players reset * uID
 kill @e[tag=die]
 scoreboard players set @a[tag=die,tag=!karma] kstreak 0
