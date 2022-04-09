@@ -4,6 +4,8 @@ scoreboard players set @s railguntimer 0
 scoreboard players set @s shotgunshots 0
 scoreboard players set @s railgunshots 0
 scoreboard players set @s shotguntimer 0
+scoreboard players set @s Coin 0
+scoreboard players set @s gCoin 0
 tag @s remove canShoot
 
 scoreboard players set @s[tag=!man,scores={xp=..9}] immune 30

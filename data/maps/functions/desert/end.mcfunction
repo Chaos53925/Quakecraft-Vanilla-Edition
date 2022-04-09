@@ -6,7 +6,7 @@ tag @a[tag=d1] add win
 tag @a[team=desert] add end
 execute as @a[team=desert] run function maps:rewards
 tag @a[tag=d1] remove win
-execute as @a[team=desert] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"blue"},{"text":".","color":"yellow"}]
+execute as @a[team=desert] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
 
 scoreboard players operation #temp desertplace = @p[tag=d1] DesertKills
 function maps:desert/place/2

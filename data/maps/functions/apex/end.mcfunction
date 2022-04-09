@@ -7,7 +7,7 @@ tag @a[tag=a1] add win
 tag @a[team=apex] add end
 execute as @a[team=apex] run function maps:rewards
 tag @a[tag=a1] remove win
-execute as @a[team=apex] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"blue"},{"text":".","color":"yellow"}]
+execute as @a[team=apex] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
 
 scoreboard players operation #temp apexplace = @p[tag=a1] ApexKills
 function maps:apex/place/2

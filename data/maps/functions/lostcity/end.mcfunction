@@ -6,7 +6,7 @@ tag @a[tag=l1] add win
 tag @a[team=lostcity] add end
 execute as @a[team=loscity] run function maps:rewards
 tag @a[tag=l1] remove win
-execute as @a[team=lostcity] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"blue"},{"text":".","color":"yellow"}]
+execute as @a[team=lostcity] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
 
 scoreboard players operation #temp lostcityplace = @p[tag=l1] LostcityKills
 function maps:lostcity/place/2
