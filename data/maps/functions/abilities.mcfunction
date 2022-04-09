@@ -8,4 +8,4 @@ scoreboard players set @s[tag=ar6] effectsek 30
 scoreboard players set @s[tag=ar7] effectsek 60
 scoreboard players set @s[tag=br1] effectsek 120
 scoreboard players set @s[tag=mn1] effectsek 30
-scoreboard players set @s[tag=kr1] effectsek 60
+scoreboard players set @s[tag=kr1] effectsek 35

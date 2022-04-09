@@ -1,9 +1,9 @@
 
 #Killnachricht
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tellraw @a[distance=..150,team=!Lobby] [{"selector":"@s","color":"blue"},{"text":" >>> ","color":"gold"},{"selector":"@e[distance=0,limit=1]","color":"dark_blue"}]
-execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tellraw @s [{"text":"+","color":"yellow"},{"text":" 5 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"yellow"}]
 #Kills und Coins eintagen
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/scores
+tellraw @s [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoins"}}]
 #Todessounds
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/deathsound
 #Killeffekte

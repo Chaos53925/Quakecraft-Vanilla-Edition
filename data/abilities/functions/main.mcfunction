@@ -18,7 +18,7 @@ execute as @a[team=!Lobby,tag=ar1,tag=play] unless entity @s[nbt={Inventory:[{Sl
 execute as @a[tag=!ding,team=!Lobby,tag=!ar1,tag=play,scores={effectsek=..0}] at @s run playsound entity.experience_orb.pickup master @s[tag=!soundsoff] ~ ~ ~ 0.4 1 0
 execute as @a[tag=!ding,team=!Lobby,tag=!ar1,tag=play,scores={effectsek=..0}] run tag @s add ding
 
-
+#fähigkeiten nicht bereit
 execute as @a[team=!Lobby,tag=ar2,tag=play,scores={effectsek=1..}] unless entity @s[nbt={Inventory:[{Slot:1b, id:"minecraft:book"}]}] run item replace entity @s hotbar.1 with minecraft:book{display: {Name: '{"translate":"effect.book.immune.load","color":"red"}'}}
 
 execute as @a[team=!Lobby,tag=ar3,tag=play,scores={effectsek=1..}] unless entity @s[nbt={Inventory:[{Slot:1b, id:"minecraft:book"}]}] run item replace entity @s hotbar.1 with minecraft:book{display: {Name: '{"translate":"effect.book.teleport.load","color":"red"}'}}

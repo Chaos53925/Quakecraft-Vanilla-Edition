@@ -11,12 +11,12 @@ scoreboard players set @s[scores={db=3}] dd 75
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tellraw @a[distance=..150,team=!Lobby] [{"selector":"@s","color":"blue"},{"text":" >>> ","color":"gold"},{"selector":"@e[distance=0,limit=1]","color":"dark_blue"}]
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=!karma,tag=headshot] uID run function guns:beam/headshot
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=!karma] uID run function guns:beam/kill
-execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run tellraw @s [{"text":"+","color":"yellow"},{"text":" 5 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"yellow"}]
 #distanz reset
 scoreboard players reset @s da
 scoreboard players reset @s dd
 #Kills und Coins eintagen
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/scores
+tellraw @s [{"text": "Coins","color": "gold"},{"text": ": +","color": "yellow"},{"score":{"name":"@s","objective":"gCoins"}}]
 #Todessounds
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand] uID run function guns:beam/deathsound
 #Killeffekte
