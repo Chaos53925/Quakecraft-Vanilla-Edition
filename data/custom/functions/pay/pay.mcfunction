@@ -8,5 +8,5 @@ scoreboard players operation @s Coins -= @s pay
 scoreboard players set @s pay -1
 scoreboard players set @s pid 0
 
-execute at @s run execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2
-execute as @p[tag=pay.target] at @s run execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2
+execute at @s run execute at @s run playsound minecraft:entity.arrow.hit master @s[tag=!soundsoff] ~ ~ ~ 0.5 1 0.5
+execute as @p[tag=pay.target] at @s run execute at @s run playsound minecraft:entity.arrow.hit master @s[tag=!soundsoff] ~ ~ ~ 0.5 1 0.5
