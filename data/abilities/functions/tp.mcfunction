@@ -6,6 +6,7 @@ scoreboard players set @s effectsek 40
 scoreboard players set @s book 0
 tag @s remove ding
 kill @s
+stopsound @s * minecraft:entity.generic.death
 scoreboard players remove @s Tode 1
 execute at @s positioned as @s run playsound minecraft:block.portal.trigger master @a[team=!Lobby,tag=tp,distance=..50,tag=!soundsoff]
 tag @s remove tp

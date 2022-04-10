@@ -17,4 +17,5 @@ clear @s
 item replace entity @a[team=candy] hotbar.8 with minecraft:knowledge_book{Recipes: ["minecraft:book"], display: {Name: '{"translate":"map.before.leave","color":"dark_red"}'}}
 scoreboard players set @s candyjoin 0
 kill @s
+stopsound @s * minecraft:entity.generic.death
 execute at @s run playsound minecraft:block.note_block.pling master @s[tag=!soundsoff] ~ ~ ~ 0.5 2
