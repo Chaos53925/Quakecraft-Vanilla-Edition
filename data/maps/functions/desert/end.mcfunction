@@ -2,10 +2,10 @@ tellraw @a[team=desert] [{"selector":"@a[tag=d1,team=desert]","color":"green"},{
 tellraw @a[tag=!d1,team=desert] [{"translate":"map.end.teilnehmer","color":"blue"},{"text":" 50 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 tellraw @a[tag=d1,team=desert] [{"translate":"map.end.winner","color":"blue"},{"text":" 75 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 
-tag @a[tag=d1] add win
+scoreboard players add @s[tag=!d1] lost 1
+execute as @a[tag=d1] run function maps:winreward
 tag @a[team=desert] add end
 execute as @a[team=desert] run function maps:rewards
-tag @a[tag=d1] remove win
 execute as @a[team=desert] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
 
 scoreboard players operation #temp desertplace = @p[tag=d1] DesertKills

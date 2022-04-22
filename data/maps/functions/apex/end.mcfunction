@@ -3,11 +3,12 @@ tellraw @a[team=apex] [{"selector":"@a[tag=a1,team=apex]","color":"green"},{"tra
 tellraw @a[tag=!a1,team=apex] [{"translate":"map.end.teilnehmer","color":"blue"},{"text":" 50 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 tellraw @a[tag=a1,team=apex] [{"translate":"map.end.winner","color":"blue"},{"text":" 75 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 
-tag @a[tag=a1] add win
+execute as @a[tag=a1] run function maps:winreward
+scoreboard players add @s[tag=!a1] lost 1
 tag @a[team=apex] add end
 execute as @a[team=apex] run function maps:rewards
-tag @a[tag=a1] remove win
 execute as @a[team=apex] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
+
 
 scoreboard players operation #temp apexplace = @p[tag=a1] ApexKills
 function maps:apex/place/2

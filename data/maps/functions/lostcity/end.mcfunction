@@ -2,10 +2,10 @@ tellraw @a[team=lostcity] [{"selector":"@a[tag=l1,team=lostcity]","color":"green
 tellraw @a[tag=!l1,team=lostcity] [{"translate":"map.end.teilnehmer","color":"blue"},{"text":" 50 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 tellraw @a[tag=l1,team=lostcity] [{"translate":"map.end.winner","color":"blue"},{"text":" 75 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 
-tag @a[tag=l1] add win
+scoreboard players add @s[tag=!l1] lost 1
+execute as @a[tag=l1] run function maps:winreward
 tag @a[team=lostcity] add end
 execute as @a[team=loscity] run function maps:rewards
-tag @a[tag=l1] remove win
 execute as @a[team=lostcity] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
 
 scoreboard players operation #temp lostcityplace = @p[tag=l1] LostcityKills

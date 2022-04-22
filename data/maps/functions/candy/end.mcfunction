@@ -2,10 +2,10 @@ tellraw @a[team=candy] [{"selector":"@a[tag=c1,team=candy]","color":"green"},{"t
 tellraw @a[tag=!c1,team=candy] [{"translate":"map.end.teilnehmer","color":"blue"},{"text":" 50 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 tellraw @a[tag=c1,team=candy] [{"translate":"map.end.winner","color":"blue"},{"text":" 75 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 
-tag @a[tag=c1] add win
+scoreboard players add @s[tag=!c1] lost 1
+execute as @a[tag=c1] run function maps:winreward
 tag @a[team=candy] add end
 execute as @a[team=candy] run function maps:rewards
-tag @a[tag=c1] remove win
 execute as @a[team=candy] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
 
 scoreboard players operation #temp candyplace = @p[tag=c1] CandyKills
