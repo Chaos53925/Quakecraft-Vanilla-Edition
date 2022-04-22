@@ -9,6 +9,7 @@ tag @s remove ar5
 tag @s remove ar6
 tag @s remove br1
 tag @s remove mn1
+tag @s remove kr1
 
 tag @s add ar4
 execute as @s run function shop:faeh/initfaeh

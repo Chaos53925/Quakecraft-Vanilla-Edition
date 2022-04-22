@@ -7,6 +7,7 @@ tag @s remove ar4
 tag @s remove ar5
 tag @s remove ar6
 tag @s remove br1
+tag @s remove kr1
 tag @s remove mn1
 
 tag @s add ar7
