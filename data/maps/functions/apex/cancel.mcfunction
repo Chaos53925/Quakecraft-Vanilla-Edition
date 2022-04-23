@@ -17,6 +17,7 @@ scoreboard players reset @a[team=apex] ApexTode
 tag @a[team=apex] remove apexvote
 clear @a[team=apex]
 tag @a[team=apex] remove play
+tag @a[team=apex] remove game
 tag @a[team=apex] add alwaysShoot
 tp @a[team=apex] 10 17 146
 execute as @a[team=apex] run function shop:main/initmain

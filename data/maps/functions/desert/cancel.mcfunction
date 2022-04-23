@@ -17,6 +17,7 @@ scoreboard players reset @a[team=desert] DesertTode
 tag @a[team=desert] remove desertvote
 clear @a[team=desert]
 tag @a[team=desert] remove play
+tag @a[team=desert] remove game
 tag @a[team=desert] add alwaysShoot
 tp @a[team=desert] 10 17 146
 execute as @a[team=desert] run function shop:main/initmain

@@ -17,6 +17,7 @@ scoreboard players reset @a[team=candy] CandyTode
 tag @a[team=candy] remove candyvote
 clear @a[team=candy]
 tag @a[team=candy] remove play
+tag @a[team=candy] remove game
 tag @a[team=candy] add alwaysShoot
 tp @a[team=candy] 10 17 146
 execute as @a[team=candy] run function shop:main/initmain

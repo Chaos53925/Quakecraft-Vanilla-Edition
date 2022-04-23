@@ -17,6 +17,7 @@ scoreboard players reset @a[team=lostcity] LostcityTode
 tag @a[team=lostcity] remove lostcityvote
 clear @a[team=lostcity]
 tag @a[team=lostcity] remove play
+tag @a[team=lostcity] remove game
 tag @a[team=lostcity] add alwaysShoot
 tp @a[team=lostcity] 10 17 146
 execute as @a[team=lostcity] run function shop:main/initmain
