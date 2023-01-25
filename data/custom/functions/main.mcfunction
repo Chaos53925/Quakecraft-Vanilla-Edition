@@ -49,3 +49,4 @@ execute as @p[scores={pay=0..},team=Lobby] run function custom:pay/work
 
 execute as @a at @s if entity @s[y=0,dy=0] run scoreboard players remove @s Tode 1
 execute as @a at @s if entity @s[y=0,dy=0] run kill @s
+
