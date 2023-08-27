@@ -70,7 +70,7 @@ scoreboard objectives add shotgun dummy
 scoreboard players set MAX shotgun 16
 scoreboard players set PARTICLES shotgun 5
 
-scoreboard objectives add shots dummy
+scoreboard objectives add ammo dummy
 scoreboard objectives add gunrlmsek dummy
 scoreboard objectives add gunrlsek dummy
 scoreboard objectives add guntimer dummy

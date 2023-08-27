@@ -3,13 +3,13 @@ bossbar set minecraft:candyprogress players @a[team=candy]
 scoreboard players set #candyprogress temp 0
 execute as @a[team=candy] run scoreboard players operation #candyprogress temp > @s CandyKills
 execute store result bossbar minecraft:candyprogress value run scoreboard players get #candyprogress temp
-bossbar set candyprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Desert ","color":"gold"},{"score":{"name":"#candyprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
+bossbar set candyprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Candy","color":"aqua"},{"score":{"name":"#candyprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
 
 scoreboard objectives setdisplay sidebar.team.aqua CandyKills
 
 execute as @a[team=candy] run function maps:invgame
 
-execute if entity @p[team=candy,scores={CandyKills=30..}] run function maps:candy/winner
+execute if entity @p[team=candy,scores={CandyKills=30..},limit=1] run function maps:candy/winner
 
 scoreboard players set #candy candylobby 0
 execute as @a[team=candy] run scoreboard players add #candy candylobby 1

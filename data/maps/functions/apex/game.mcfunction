@@ -3,13 +3,13 @@ bossbar set minecraft:apexprogress players @a[team=apex]
 scoreboard players set #apexprogress temp 0
 execute as @a[team=apex] run scoreboard players operation #apexprogress temp > @s ApexKills
 execute store result bossbar minecraft:apexprogress value run scoreboard players get #apexprogress temp
-bossbar set apexprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Desert ","color":"gold"},{"score":{"name":"#apexprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
+bossbar set apexprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Apex","color":"red"},{"score":{"name":"#apexprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
 
 scoreboard objectives setdisplay sidebar.team.red ApexKills 
 
 execute as @a[team=apex] run function maps:invgame
 
-execute if entity @p[team=apex,scores={ApexKills=30..}] run function maps:apex/winner
+execute if entity @p[team=apex,scores={ApexKills=30..},limit=1] run function maps:apex/winner
 
 scoreboard players set #apex apexlobby 0
 execute as @a[team=apex] run scoreboard players add #apex apexlobby 1

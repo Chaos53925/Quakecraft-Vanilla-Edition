@@ -12,4 +12,5 @@ execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=karma]
 execute unless score @s uID = @e[distance=0,limit=1,type=!armor_stand,tag=karma] uID run scoreboard players set @s shotgun 17
 #Getroffenen Gegner killen
 execute unless score @s uID = @e[distance=0,limit=1] uID run tag @e[distance=0,limit=1,type=!armor_stand] add die
+execute unless score @s uID = @e[distance=0,limit=1] uID run playsound minecraft:block.dispenser.fail master @a[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.4 1 0
 execute unless score @s uID = @e[distance=0,limit=1] uID run tp @e[distance=0,limit=1,type=!armor_stand] ~ -50 ~

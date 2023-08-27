@@ -5,11 +5,11 @@ function guns:shotgun/particle
 scoreboard players add @s shotgun 1
 scoreboard players add @s particleC 1
 
-scoreboard players set @s shotguntimer 0
+scoreboard players set @s guntimer 0
 execute if score @s shotgun <= MAX shotgun run scoreboard players add @s distance 1
 execute if score @s shotgun >= MAX shotgun run scoreboard players reset @s distance
 
-function guns:shotgun/hitbox
+execute as @s run function guns:shotgun/hitbox
 
 execute if score @s particleC >= PARTICLES shotgun run scoreboard players set @s particleC 0
 

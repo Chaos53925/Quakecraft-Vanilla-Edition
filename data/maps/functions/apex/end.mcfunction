@@ -29,16 +29,16 @@ function maps:apex/place/9
 scoreboard players operation #temp apexplace = @p[tag=a1] ApexKills
 function maps:apex/place/10
 
-execute if entity @p[tag=a1] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"1. ","color":"red"},{"selector":"@p[tag=a1]","color":"gold"},{"score":{"name":"@p[tag=a1]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a2] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"2. ","color":"red"},{"selector":"@p[tag=a2]","color":"gold"},{"score":{"name":"@p[tag=a2]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a3] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"3. ","color":"red"},{"selector":"@p[tag=a3]","color":"gold"},{"score":{"name":"@p[tag=a3]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a4] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"4. ","color":"red"},{"selector":"@p[tag=a4]","color":"gold"},{"score":{"name":"@p[tag=a4]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a5] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"5. ","color":"red"},{"selector":"@p[tag=a5]","color":"gold"},{"score":{"name":"@p[tag=a5]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a6] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"6. ","color":"red"},{"selector":"@p[tag=a6]","color":"gold"},{"score":{"name":"@p[tag=a6]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a7] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"7. ","color":"red"},{"selector":"@p[tag=a7]","color":"gold"},{"score":{"name":"@p[tag=a7]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a8] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"8. ","color":"red"},{"selector":"@p[tag=a8]","color":"gold"},{"score":{"name":"@p[tag=a8]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a9] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"9. ","color":"red"},{"selector":"@p[tag=a9]","color":"gold"},{"score":{"name":"@p[tag=a9]","objective":"Apexkills"},"color":"green"}]}]
-execute if entity @p[tag=a10] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"10. ","color":"red"},{"selector":"@p[tag=a10]","color":"gold"},{"score":{"name":"@p[tag=a10]","objective":"Apexkills"},"color":"green"}]}]
+execute if entity @p[tag=a1] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"1.","color":"red"},{"selector":"@p[tag=a1]","color":"gold"},{"score":{"name":"@p[tag=a1]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a2] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"2.","color":"red"},{"selector":"@p[tag=a2]","color":"gold"},{"score":{"name":"@p[tag=a2]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a3] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"3.","color":"red"},{"selector":"@p[tag=a3]","color":"gold"},{"score":{"name":"@p[tag=a3]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a4] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"4.","color":"red"},{"selector":"@p[tag=a4]","color":"gold"},{"score":{"name":"@p[tag=a4]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a5] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"5.","color":"red"},{"selector":"@p[tag=a5]","color":"gold"},{"score":{"name":"@p[tag=a5]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a6] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"6.","color":"red"},{"selector":"@p[tag=a6]","color":"gold"},{"score":{"name":"@p[tag=a6]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a7] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"7.","color":"red"},{"selector":"@p[tag=a7]","color":"gold"},{"score":{"name":"@p[tag=a7]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a8] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"8.","color":"red"},{"selector":"@p[tag=a8]","color":"gold"},{"score":{"name":"@p[tag=a8]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a9] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"9.","color":"red"},{"selector":"@p[tag=a9]","color":"gold"},{"score":{"name":"@p[tag=a9]","objective":"ApexKills"},"color":"green"}]}]
+execute if entity @p[tag=a10] run tellraw @a[team=apex] [{"translate":"map.end.place","color":"red","with":[{"text":"10.","color":"red"},{"selector":"@p[tag=a10]","color":"gold"},{"score":{"name":"@p[tag=a10]","objective":"ApexKills"},"color":"green"}]}]
 
 tag @a[team=apex] remove a1
 tag @a[team=apex] remove a2

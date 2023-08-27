@@ -9,12 +9,12 @@ execute as @a[tag=!canShoot] at @s if score @s rightclick matches 1.. positioned
 execute as @a[tag=!canShoot] at @s if score @s rightclick matches 1.. positioned as @s as @s run playsound minecraft:block.dispenser.fail master @s[team=!Lobby,distance=..50,tag=!soundsoff] ~ ~ ~ 0.4 1 0
 
 #Shotgun
-execute as @a[tag=canShoot,scores={shotgunshots=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. anchored eyes positioned ^ ^ ^0.75 run function guns:shotgun/core
-execute as @a[tag=canShoot,scores={shotgunshots=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. run scoreboard players remove @s shots 1
+execute as @a[tag=canShoot,scores={ammo=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. anchored eyes positioned ^ ^ ^0.75 run function guns:shotgun/core
+execute as @a[tag=canShoot,scores={ammo=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. run scoreboard players remove @s ammo 1
 
 #Railgun
-execute as @a[tag=canShoot,scores={railgunshots=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. anchored eyes positioned ^ ^ ^0.75 run function guns:railgun/core
-execute as @a[tag=canShoot,scores={railgunshots=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. run scoreboard players remove @s shots 1
+execute as @a[tag=canShoot,scores={ammo=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. anchored eyes positioned ^ ^ ^0.75 run function guns:railgun/core
+execute as @a[tag=canShoot,scores={ammo=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. run scoreboard players remove @s ammo 1
 
 #Mehrfachkillerkennung
 execute as @a at @s if score @s streak matches 2 run function guns:streak/streak2
@@ -33,7 +33,6 @@ scoreboard players set @a railgun 0
 scoreboard players set @a streak 0
 scoreboard players set @a particleC 0
 scoreboard players set @a rightclick 0
-scoreboard players reset * uID
 kill @e[tag=die]
 scoreboard players set @a[tag=die,tag=!karma] kstreak 0
 scoreboard players set @a[tag=die] gunrlmsek 0

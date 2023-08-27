@@ -27,16 +27,16 @@ function maps:candy/place/9
 scoreboard players operation #temp candyplace = @p[tag=c1] CandyKills
 function maps:candy/place/10
 
-execute if entity @p[tag=c1] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"1. ","color":"red"},{"selector":"@p[tag=c1]","color":"gold"},{"score":{"name":"@p[tag=c1]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c2] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"2. ","color":"red"},{"selector":"@p[tag=c2]","color":"gold"},{"score":{"name":"@p[tag=c2]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c3] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"3. ","color":"red"},{"selector":"@p[tag=c3]","color":"gold"},{"score":{"name":"@p[tag=c3]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c4] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"4. ","color":"red"},{"selector":"@p[tag=c4]","color":"gold"},{"score":{"name":"@p[tag=c4]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c5] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"5. ","color":"red"},{"selector":"@p[tag=c5]","color":"gold"},{"score":{"name":"@p[tag=c5]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c6] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"6. ","color":"red"},{"selector":"@p[tag=c6]","color":"gold"},{"score":{"name":"@p[tag=c6]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c7] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"7. ","color":"red"},{"selector":"@p[tag=c7]","color":"gold"},{"score":{"name":"@p[tag=c7]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c8] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"8. ","color":"red"},{"selector":"@p[tag=c8]","color":"gold"},{"score":{"name":"@p[tag=c8]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c9] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"9. ","color":"red"},{"selector":"@p[tag=c9]","color":"gold"},{"score":{"name":"@p[tag=c9]","objective":"CandyKills"},"color":"green"}]}]
-execute if entity @p[tag=c10] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"10. ","color":"red"},{"selector":"@p[tag=c10]","color":"gold"},{"score":{"name":"@p[tag=c10]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c1] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"1.","color":"red"},{"selector":"@p[tag=c1]","color":"gold"},{"score":{"name":"@p[tag=c1]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c2] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"2.","color":"red"},{"selector":"@p[tag=c2]","color":"gold"},{"score":{"name":"@p[tag=c2]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c3] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"3.","color":"red"},{"selector":"@p[tag=c3]","color":"gold"},{"score":{"name":"@p[tag=c3]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c4] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"4.","color":"red"},{"selector":"@p[tag=c4]","color":"gold"},{"score":{"name":"@p[tag=c4]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c5] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"5.","color":"red"},{"selector":"@p[tag=c5]","color":"gold"},{"score":{"name":"@p[tag=c5]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c6] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"6.","color":"red"},{"selector":"@p[tag=c6]","color":"gold"},{"score":{"name":"@p[tag=c6]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c7] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"7.","color":"red"},{"selector":"@p[tag=c7]","color":"gold"},{"score":{"name":"@p[tag=c7]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c8] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"8.","color":"red"},{"selector":"@p[tag=c8]","color":"gold"},{"score":{"name":"@p[tag=c8]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c9] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"9.","color":"red"},{"selector":"@p[tag=c9]","color":"gold"},{"score":{"name":"@p[tag=c9]","objective":"CandyKills"},"color":"green"}]}]
+execute if entity @p[tag=c10] run tellraw @a[team=candy] [{"translate":"map.end.place","color":"red","with":[{"text":"10.","color":"red"},{"selector":"@p[tag=c10]","color":"gold"},{"score":{"name":"@p[tag=c10]","objective":"CandyKills"},"color":"green"}]}]
 
 tag @a[team=candy] remove c1
 tag @a[team=candy] remove c2
