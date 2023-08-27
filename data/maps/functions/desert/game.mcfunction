@@ -3,7 +3,7 @@ bossbar set minecraft:desertprogress players @a[team=desert]
 scoreboard players set #desertprogress temp 0
 execute as @a[team=desert] run scoreboard players operation #desertprogress temp > @s DesertKills
 execute store result bossbar minecraft:desertprogress value run scoreboard players get #desertprogress temp
-bossbar set desertprogress name [{"text":"Desert ","color":"gold"},{"translate":"main.actionbar.kills","color":"yellow"},{"score":{"name":"#desertprogress","objective":"temp"},"color":"blue"},{"text":"/","color":"yellow"},{"text":"30","color":"blue"}]
+bossbar set desertprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Desert ","color":"gold"},{"score":{"name":"#desertprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
 
 scoreboard objectives setdisplay sidebar.team.gold DesertKills
 

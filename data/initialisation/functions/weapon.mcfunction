@@ -49,7 +49,6 @@ scoreboard objectives add snipe dummy
 scoreboard objectives add supersnipe dummy
 scoreboard objectives add shots dummy
 scoreboard objectives add reloadtimer dummy
-scoreboard objectives add railguntimer dummy
 scoreboard objectives add game dummy
 scoreboard players set #apexgame game 0
 scoreboard players set #desertgame game 0
@@ -67,10 +66,11 @@ scoreboard objectives add Coins dummy
 scoreboard objectives add Coin dummy
 scoreboard objectives add gCoin dummy
 
-scoreboard objectives add shotgunshots dummy
 scoreboard objectives add shotgun dummy
-scoreboard objectives add shotguntimer dummy
 scoreboard players set MAX shotgun 16
 scoreboard players set PARTICLES shotgun 5
 
-scoreboard objectives add railgunshots dummy
+scoreboard objectives add shots dummy
+scoreboard objectives add gunrlmsek dummy
+scoreboard objectives add gunrlsek dummy
+scoreboard objectives add guntimer dummy

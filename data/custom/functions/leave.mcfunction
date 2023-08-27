@@ -1,8 +1,8 @@
 scoreboard players set @s book 0
-execute if entity @s[team=apex] run tellraw @a[team=apex] [{"selector":"@s","color":"red"},{"translate":"join.leave.map","color":"yellow"}]
-execute if entity @s[team=candy] run tellraw @a[team=candy] [{"selector":"@s","color":"aqua"},{"translate":"join.leave.map","color":"yellow"}]
-execute if entity @s[team=desert] run tellraw @a[team=desert] [{"selector":"@s","color":"gold"},{"translate":"join.leave.map","color":"yellow"}]
-execute if entity @s[team=lostcity] run tellraw @a[team=lostcity] [{"selector":"@s","color":"gray"},{"translate":"join.leave.map","color":"yellow"}]
+execute if entity @s[team=apex] run tellraw @a[team=apex] [{"translate":"join.leave.map","color":"yellow","with":[{"selector":"@s","color":"red"}]}]
+execute if entity @s[team=candy] run tellraw @a[team=candy] [{"translate":"join.leave.map","color":"yellow","with":[{"selector":"@s","color":"aqua"}]}]
+execute if entity @s[team=desert] run tellraw @a[team=desert] [{"translate":"join.leave.map","color":"yellow","with":[{"selector":"@s","color":"gold"}]}]
+execute if entity @s[team=lostcity] run tellraw @a[team=lostcity] [{"translate":"join.leave.map","color":"yellow","with":[{"selector":"@s","color":"gray"}]}]
 
 execute at @s[team=Lobby] run particle minecraft:large_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 50 force
 

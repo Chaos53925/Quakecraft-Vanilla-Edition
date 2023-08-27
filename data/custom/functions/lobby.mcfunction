@@ -1,4 +1,4 @@
-title @a times 0 10 0
+
 tag @a remove alwaysShoot
 
 execute as @a run scoreboard players add #player temp 1
@@ -10,7 +10,7 @@ scoreboard players set #player game 0
 scoreboard players set #player temp 0
 execute as @a run scoreboard players add #player game 1
 execute store result bossbar minecraft:playerbar value run scoreboard players get #player game
-bossbar set playerbar name [{"text":"Quakecraft Vanilla Edition ","color":"white"},{"text":"|","color":"gold"},{"text":" Online: ","color":"yellow"},{"score":{"name":"#player","objective":"game"},"color":"aqua"},{"text":"/","color":"gold"},{"text":"60","color":"aqua"}]
+bossbar set playerbar name [{"translate":"quake.lobby.bar.title","color":"white","with":[{"text":"|","color":"gold"}]},{"translate":"quake.lobby.bar.online","color":"yellow","with":[{"score":{"name":"#player","objective":"game"},"color":"aqua"},{"text":"/","color":"gold"},{"text":"60","color":"aqua"}]}]
 bossbar set minecraft:playerbar players @a[team=Lobby]
 
 execute store result score #dif temp run difficulty

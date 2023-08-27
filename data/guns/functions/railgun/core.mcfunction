@@ -3,7 +3,7 @@ tag @s add shoot
 execute if score @s particleC matches 0 run function guns:core/particle
 scoreboard players add @s railgun 1
 scoreboard players add @s particleC 1
-scoreboard players set @s railguntimer 0
+scoreboard players set @s guntimer 0
 execute if score @s railgun <= MAX railgun run scoreboard players add @s distance 1
 execute if score @s railgun >= MAX railgun run scoreboard players reset @s distance
 

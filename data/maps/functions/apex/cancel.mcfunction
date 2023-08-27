@@ -1,7 +1,7 @@
 
 tellraw @a[team=apex] [{"translate":"map.end.cancel.playergo","color":"red"}]
 
-execute as @a[team=apex] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"blue"},{"text":".","color":"yellow"}]
+execute as @a[team=apex] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
 
 scoreboard players set #apex apexvote 0
 

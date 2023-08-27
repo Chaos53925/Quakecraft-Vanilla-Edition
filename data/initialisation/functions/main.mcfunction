@@ -1,3 +1,4 @@
+title @a times 0 10 0
 
 scoreboard objectives add reload dummy
 

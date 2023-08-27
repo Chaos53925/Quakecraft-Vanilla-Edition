@@ -5,9 +5,9 @@ tag @s add start
 tag @s remove play
 scoreboard players set #apex apexlobby 0
 execute as @a[team=apex] run scoreboard players add #apex apexlobby 1
-tellraw @a[team=apex] [{"selector":"@s","color":"red"},{"translate":"map.join.inmap","color":"yellow"},{"score":{"name":"#apex","objective":"apexlobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
+tellraw @a[team=apex] [{"translate":"map.join.inmap","color":"yellow","with":[{"selector":"@s","color":"red"},{"score":{"name":"#apex","objective":"apexlobby"},"color":"aqua"},{"text":"10","color":"aqua"}]}]
 
-tellraw @a[team=Lobby] [{"selector":"@s","color":"red"},{"translate":"map.join.apex.inlobby","color":"yellow"},{"score":{"name":"#apex","objective":"apexlobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
+tellraw @a[team=Lobby] [{"translate":"map.join.inlobby","color":"yellow","with":[{"selector":"@s","color":"red"},{"text":"Apex","color":"red"},{"score":{"name":"#apex","objective":"apexlobby"},"color":"aqua"},{"text":"10","color":"aqua"}]}]
 
 scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players

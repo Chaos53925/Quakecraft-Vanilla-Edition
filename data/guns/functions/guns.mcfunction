@@ -10,11 +10,11 @@ execute as @a[tag=!canShoot] at @s if score @s rightclick matches 1.. positioned
 
 #Shotgun
 execute as @a[tag=canShoot,scores={shotgunshots=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. anchored eyes positioned ^ ^ ^0.75 run function guns:shotgun/core
-execute as @a[tag=canShoot,scores={shotgunshots=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. run scoreboard players remove @s shotgunshots 1
+execute as @a[tag=canShoot,scores={shotgunshots=1..},tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] at @s if score @s rightclick matches 1.. run scoreboard players remove @s shots 1
 
 #Railgun
 execute as @a[tag=canShoot,scores={railgunshots=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. anchored eyes positioned ^ ^ ^0.75 run function guns:railgun/core
-execute as @a[tag=canShoot,scores={railgunshots=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. run scoreboard players remove @s railgunshots 1
+execute as @a[tag=canShoot,scores={railgunshots=1..},tag=!slv1,tag=!slv2,tag=!slv3,tag=!slv4,tag=!slv5,tag=!slv6] at @s if score @s rightclick matches 1.. run scoreboard players remove @s shots 1
 
 #Mehrfachkillerkennung
 execute as @a at @s if score @s streak matches 2 run function guns:streak/streak2
@@ -25,6 +25,7 @@ execute as @a[tag=!ks10] at @s if score @s kstreak matches 10 run function guns:
 execute as @a[tag=!ks20] at @s if score @s kstreak matches 20 run function guns:kstreak/ks20
 execute as @a[tag=!ks30] at @s if score @s kstreak matches 30 run function guns:kstreak/ks30
 execute as @a[tag=!ks38] at @s if score @s kstreak matches 38 run function guns:kstreak/ks38
+
 #abschluss
 execute as @a[scores={rightclick=1..},tag=canShoot] unless entity @s[tag=alwaysShoot] run tag @s remove canShoot
 scoreboard players set @a shotgun 0
@@ -35,8 +36,9 @@ scoreboard players set @a rightclick 0
 scoreboard players reset * uID
 kill @e[tag=die]
 scoreboard players set @a[tag=die,tag=!karma] kstreak 0
-scoreboard players set @a[tag=die] railguntimer 30
-scoreboard players set @a[tag=die] shotguntimer 110
+scoreboard players set @a[tag=die] gunrlmsek 0
+scoreboard players set @a[tag=die] gunrlsek 0
+scoreboard players set @a[tag=die] guntimer 0
 tag @a[tag=die] remove brst
 tag @a[tag=die] remove hit
 tag @a[tag=die] remove headshot

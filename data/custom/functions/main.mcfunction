@@ -30,7 +30,7 @@ execute if score #lostcitygame game matches 3 run function maps:lostcity/afterga
 
 item replace entity @a[team=Lobby] hotbar.8 with minecraft:knowledge_book{Recipes: ["minecraft:book"], display: {Name: '{"translate":"lobby.book.spawn","color":"green"}'}}
 
-execute as @a[team=Lobby] if score #reload reload matches 1 run title @s actionbar [{"text":">>> ","color":"gold"},{"translate":"main.actionbar.wins","color":"dark_blue"},{"score":{"name":"@s","objective":"Wins"},"color":"red"},{"text":" | ","color":"gold"},{"translate":"main.actionbar.kills","color":"dark_blue"},{"score":{"name":"@s","objective":"Kills"},"color":"red"},{"text":" | ","color":"gold"},{"translate":"main.actionbar.deaths","color":"dark_blue"},{"score":{"name":"@s","objective":"Tode"},"color":"red"},{"text":" | ","color":"gold"},{"translate":"main.actionbar.coins","color":"dark_blue"},{"score":{"name":"@s","objective":"Coins"},"color":"red"},{"text":" <<<","color":"gold"}]
+execute as @a[team=Lobby] if score #reload reload matches 1 run title @s actionbar {"translate":"main.actionbar","color":"yellow","with":[{"text":">>>","color":"gold"},{"text":"|","color":"gold"},{"text":"<<<","color":"gold"},{"score":{"name":"@s","objective":"Wins"},"color":"red"},{"score":{"name":"@s","objective":"Kills"},"color":"red"},{"score":{"name":"@s","objective":"Tode"},"color":"red"},{"score":{"name":"@s","objective":"Coins"},"color":"red"}]}
 
 execute as @a unless score @s id = @s id store result score @s id run scoreboard players add #counter id 1
 
@@ -49,4 +49,3 @@ execute as @p[scores={pay=0..},team=Lobby] run function custom:pay/work
 
 execute as @a at @s if entity @s[y=0,dy=0] run scoreboard players remove @s Tode 1
 execute as @a at @s if entity @s[y=0,dy=0] run kill @s
-

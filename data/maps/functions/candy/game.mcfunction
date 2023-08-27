@@ -3,7 +3,7 @@ bossbar set minecraft:candyprogress players @a[team=candy]
 scoreboard players set #candyprogress temp 0
 execute as @a[team=candy] run scoreboard players operation #candyprogress temp > @s CandyKills
 execute store result bossbar minecraft:candyprogress value run scoreboard players get #candyprogress temp
-bossbar set candyprogress name [{"text":"Candy ","color":"aqua"},{"translate":"main.actionbar.kills","color":"yellow"},{"score":{"name":"#candyprogress","objective":"temp"},"color":"blue"},{"text":"/","color":"yellow"},{"text":"30","color":"blue"}]
+bossbar set candyprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Desert ","color":"gold"},{"score":{"name":"#candyprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
 
 scoreboard objectives setdisplay sidebar.team.aqua CandyKills
 

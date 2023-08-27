@@ -1,12 +1,12 @@
-tellraw @a[team=desert] [{"selector":"@a[tag=d1,team=desert]","color":"green"},{"translate":"map.end.haswon","color":"green"}]
+tellraw @a[team=desert] [{"translate":"map.end.haswon","color":"green","with":[{"selector":"@a[tag=d1,team=desert]","color":"green"}]}]
 tellraw @a[tag=!d1,team=desert] [{"translate":"map.end.teilnehmer","color":"blue"},{"text":" 50 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
-tellraw @a[tag=d1,team=desert] [{"translate":"map.end.winner","color":"blue"},{"text":" 75 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
+tellraw @a[tag=d1,team=desert] [{"translate":"map.end.winner","color":"blue","with":[{"text":"75","color":"red"},{"text":"Coins","color":"gold"}]}]
 
 scoreboard players add @s[tag=!d1] lost 1
 execute as @a[tag=d1] run function maps:winreward
 tag @a[team=desert] add end
 execute as @a[team=desert] run function maps:rewards
-execute as @a[team=desert] run tellraw @s [{"translate":"map.end.insgesammt","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"yellow"}]
+execute as @a[team=desert] run tellraw @s [{"translate":"map.end.insgesamt","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
 
 scoreboard players operation #temp desertplace = @p[tag=d1] DesertKills
 function maps:desert/place/2
@@ -27,16 +27,16 @@ function maps:desert/place/9
 scoreboard players operation #temp desertplace = @p[tag=d1] DesertKills
 function maps:desert/place/10
 
-execute if entity @p[tag=d1] run tellraw @a[team=desert] [{"text":"1. ","color":"red"},{"selector":"@p[tag=d1]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d1]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d2] run tellraw @a[team=desert] [{"text":"2. ","color":"red"},{"selector":"@p[tag=d2]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d2]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d3] run tellraw @a[team=desert] [{"text":"3. ","color":"red"},{"selector":"@p[tag=d3]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d3]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d4] run tellraw @a[team=desert] [{"text":"4. ","color":"red"},{"selector":"@p[tag=d4]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d4]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d5] run tellraw @a[team=desert] [{"text":"5. ","color":"red"},{"selector":"@p[tag=d5]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d5]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d6] run tellraw @a[team=desert] [{"text":"6. ","color":"red"},{"selector":"@p[tag=d6]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d6]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d7] run tellraw @a[team=desert] [{"text":"7. ","color":"red"},{"selector":"@p[tag=d7]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d7]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d8] run tellraw @a[team=desert] [{"text":"8. ","color":"red"},{"selector":"@p[tag=d8]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d8]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d9] run tellraw @a[team=desert] [{"text":"9. ","color":"red"},{"selector":"@p[tag=d9]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d9]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
-execute if entity @p[tag=d10] run tellraw @a[team=desert] [{"text":"10. ","color":"red"},{"selector":"@p[tag=d10]","color":"gold"},{"text":" - ","color":"red"},{"score":{"name":"@p[tag=d10]","objective":"DesertKills"},"color":"green"},{"translate":"map.end.place.kills","color":"red"}]
+execute if entity @p[tag=d1] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"1. ","color":"red"},{"selector":"@p[tag=d1]","color":"gold"},{"score":{"name":"@p[tag=d1]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d2] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"2. ","color":"red"},{"selector":"@p[tag=d2]","color":"gold"},{"score":{"name":"@p[tag=d2]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d3] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"3. ","color":"red"},{"selector":"@p[tag=d3]","color":"gold"},{"score":{"name":"@p[tag=d3]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d4] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"4. ","color":"red"},{"selector":"@p[tag=d4]","color":"gold"},{"score":{"name":"@p[tag=d4]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d5] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"5. ","color":"red"},{"selector":"@p[tag=d5]","color":"gold"},{"score":{"name":"@p[tag=d5]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d6] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"6. ","color":"red"},{"selector":"@p[tag=d6]","color":"gold"},{"score":{"name":"@p[tag=d6]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d7] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"7. ","color":"red"},{"selector":"@p[tag=d7]","color":"gold"},{"score":{"name":"@p[tag=d7]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d8] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"8. ","color":"red"},{"selector":"@p[tag=d8]","color":"gold"},{"score":{"name":"@p[tag=d8]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d9] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"9. ","color":"red"},{"selector":"@p[tag=d9]","color":"gold"},{"score":{"name":"@p[tag=d9]","objective":"Desertkills"},"color":"green"}]}]
+execute if entity @p[tag=d10] run tellraw @a[team=desert] [{"translate":"map.end.place","color":"red","with":[{"text":"10. ","color":"red"},{"selector":"@p[tag=d10]","color":"gold"},{"score":{"name":"@p[tag=d10]","objective":"Desertkills"},"color":"green"}]}]
 
 tag @a[team=desert] remove d1
 tag @a[team=desert] remove d2

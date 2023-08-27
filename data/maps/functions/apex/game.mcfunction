@@ -3,7 +3,7 @@ bossbar set minecraft:apexprogress players @a[team=apex]
 scoreboard players set #apexprogress temp 0
 execute as @a[team=apex] run scoreboard players operation #apexprogress temp > @s ApexKills
 execute store result bossbar minecraft:apexprogress value run scoreboard players get #apexprogress temp
-bossbar set apexprogress name [{"text":"Apex ","color":"red"},{"translate":"main.actionbar.kills","color":"yellow"},{"score":{"name":"#apexprogress","objective":"temp"},"color":"blue"},{"text":"/","color":"yellow"},{"text":"30","color":"blue"}]
+bossbar set apexprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Desert ","color":"gold"},{"score":{"name":"#apexprogress","objective":"temp"},"color":"blue"},{"text":"30","color":"blue"}]}]
 
 scoreboard objectives setdisplay sidebar.team.red ApexKills 
 

@@ -5,9 +5,9 @@ tag @s add start
 tag @s remove play
 scoreboard players set #desert desertlobby 0
 execute as @a[team=desert] run scoreboard players add #desert desertlobby 1
-tellraw @a[team=desert] [{"selector":"@s","color":"gold"},{"translate":"map.join.inmap","color":"yellow"},{"score":{"name":"#desert","objective":"desertlobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
+tellraw @a[team=desert] [{"translate":"map.join.inmap","color":"yellow","with":[{"selector":"@s","color":"red"},{"score":{"name":"#desert","objective":"desertlobby"},"color":"aqua"},{"text":"10","color":"aqua"}]}]
 
-tellraw @a[team=Lobby] [{"selector":"@s","color":"gold"},{"translate":"map.join.desert.inlobby","color":"yellow"},{"score":{"name":"#desert","objective":"desertlobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
+tellraw @a[team=Lobby] [{"translate":"map.join.inlobby","color":"yellow","with":[{"selector":"@s","color":"gold"},{"text":"Desert","color":"gold"},{"score":{"name":"#desert","objective":"desertlobby"},"color":"aqua"},{"text":"10","color":"aqua"}]}]
 
 scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players

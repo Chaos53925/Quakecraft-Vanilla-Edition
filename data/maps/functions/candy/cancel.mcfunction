@@ -1,7 +1,7 @@
 
 tellraw @a[team=candy] [{"translate":"map.end.cancel.playergo","color":"red"}]
 
-execute as @a[team=candy] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow"},{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"},{"text":".","color":"blue"},{"text":".","color":"yellow"}]
+execute as @a[team=candy] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
 
 scoreboard players set #candy candyvote 0
 

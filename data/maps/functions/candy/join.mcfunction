@@ -5,9 +5,9 @@ tag @s add start
 tag @s remove play
 scoreboard players set #candy candylobby 0
 execute as @a[team=candy] run scoreboard players add #candy candylobby 1
-tellraw @a[team=candy] [{"selector":"@s","color":"aqua"},{"translate":"map.join.inmap","color":"yellow"},{"score":{"name":"#candy","objective":"candylobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
+tellraw @a[team=candy] [{"translate":"map.join.inmap","color":"yellow","with":[{"selector":"@s","color":"red"},{"score":{"name":"#candy","objective":"candylobby"},"color":"aqua"},{"text":"10","color":"aqua"}]}]
 
-tellraw @a[team=Lobby] [{"selector":"@s","color":"aqua"},{"translate":"map.join.candy.inlobby","color":"yellow"},{"score":{"name":"#candy","objective":"candylobby"},"color":"aqua"},{"text":"/","color":"yellow"},{"text":"10","color":"aqua"},{"text":")","color":"yellow"}]
+tellraw @a[team=Lobby] [{"translate":"map.join.inlobby","color":"yellow","with":[{"selector":"@s","color":"aqua"},{"text":"Candy","color":"aqua"},{"score":{"name":"#candy","objective":"candylobby"},"color":"aqua"},{"text":"10","color":"aqua"}]}]
 
 scoreboard players remove @s Tode 1
 bossbar set minecraft:playerbar players

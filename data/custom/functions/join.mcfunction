@@ -1,3 +1,5 @@
+title @s times 0 10 0
+
 execute as @s[team=!Lobby,tag=play] run scoreboard players operation @s Coins -= @s Coin
 scoreboard players set @s jointimer 0
 tag @s[tag=!end,tag=!start,team=!Lobby] add midgame
