@@ -1,0 +1,1 @@
+execute unless data storage quake:apex {exist:true} run function quake:main/initialisation/storages/apex
