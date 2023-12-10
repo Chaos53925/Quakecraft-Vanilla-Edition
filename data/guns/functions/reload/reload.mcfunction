@@ -4,8 +4,8 @@ execute as @s[tag=!reloading,scores={ammo=..0}] run function guns:reload/reloads
 #waffentimer
 scoreboard players add @s[scores={ammo=..0}] guntimer 1
 
-execute if entity @s[scores={ammo=0,guntimer=20..}] run scoreboard players remove @s gunrlmsek 1
-execute if entity @s[scores={ammo=0,guntimer=20..}] run scoreboard players set @s guntimer 2
+execute if entity @s[scores={ammo=0,guntimer=2..}] run scoreboard players remove @s gunrlmsek 1
+execute if entity @s[scores={ammo=0,guntimer=2..}] run scoreboard players set @s guntimer 2
 execute if entity @s[scores={ammo=0,gunrlmsek=..-1}] run scoreboard players remove @s gunrlsek 1
 execute if entity @s[scores={ammo=0,gunrlmsek=..-1}] run scoreboard players set @s gunrlmsek 9
 
