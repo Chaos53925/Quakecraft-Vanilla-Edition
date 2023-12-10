@@ -1,5 +1,7 @@
-execute as @s[tag=game,tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] unless entity @s[nbt={Inventory:[{Slot:0b, id:"minecraft:carrot_on_a_stick"}]}] run scoreboard players set @s shotgunshots 0
-execute as @s[tag=game,tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] unless entity @s[nbt={Inventory:[{Slot:0b, id:"minecraft:carrot_on_a_stick"}]}] run scoreboard players set @s shotguntimer 0
+execute as @s[tag=game,tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] unless entity @s[nbt={Inventory:[{Slot:0b, id:"minecraft:carrot_on_a_stick"}]}] run scoreboard players set @s ammo 0
+execute as @s[tag=game,tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] unless entity @s[nbt={Inventory:[{Slot:0b, id:"minecraft:carrot_on_a_stick"}]}] run scoreboard players set @s guntimer 0
+execute as @s[tag=game,tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] unless entity @s[nbt={Inventory:[{Slot:0b, id:"minecraft:carrot_on_a_stick"}]}] run scoreboard players set @s gunrlsek 0
+execute as @s[tag=game,tag=!wlv1,tag=!wlv2,tag=!wlv3,tag=!wlv4,tag=!wlv5,tag=!wlv6,tag=!wlv7] unless entity @s[nbt={Inventory:[{Slot:0b, id:"minecraft:carrot_on_a_stick"}]}] run scoreboard players set @s gunrlmsek 0
 
 #waffen
 item replace entity @s[tag=wlv1] hotbar.0 with minecraft:carrot_on_a_stick{display: {Name: '{"translate":"game.railgun","with":[{"text":"MK.1"}]}'}, CustomModelData: 1}
