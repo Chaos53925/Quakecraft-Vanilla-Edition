@@ -1,24 +1,24 @@
 
-tellraw @a[team=apex] [{"translate":"map.end.cancel.playergo","color":"red"}]
+$tellraw @a[team=$(team)] [{"translate":"map.end.cancel.playergo","color":"red"}]
 
-execute as @a[team=apex] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
+$execute as @a[team=$(team)] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
 
-scoreboard players set #apex apexvote 0
+$scoreboard players set $(teamname) $(votescoreboard) 0
 
-scoreboard players set #apexquick game 0
-scoreboard players set @a[team=apex] Coin 0
-scoreboard players reset * ApexKills
-scoreboard players reset @a[team=apex] uID
-scoreboard players set #apex game 0
-scoreboard players set #apexsek game 0
-scoreboard players set #apexmin game 2
-scoreboard players set #apexgame game 0
-scoreboard players reset @a[team=apex] ApexTode
-tag @a[team=apex] remove apexvote
-clear @a[team=apex]
-tag @a[team=apex] remove play
-tag @a[team=apex] remove game
-tp @a[team=apex] 10 17 146
-execute as @a[team=apex] run function shop:main/initmain
-team join Lobby @a[team=apex]
-bossbar set minecraft:apexprogress players
+$scoreboard players set $(quickplayers) data 0
+$scoreboard players set @a[team=$(team)] Coin 0
+$scoreboard players reset * $(teamkills)
+$scoreboard players reset @a[team=$(team)] uID
+$scoreboard players set $(teamname) data 0
+$scoreboard players set $(seconds) data 0
+$scoreboard players set $(minutes) data 2
+$scoreboard players set $(mapdata) data 0
+$scoreboard players reset @a[team=$(team)] $(teamkills)
+$tag @a[team=$(team)] remove $(votetag)
+$clear @a[team=$(team)]
+$tag @a[team=$(team)] remove play
+$tag @a[team=$(team)] remove game
+$tp @a[team=$(team)] 10 17 146
+$execute as @a[team=$(team)] run function shop:main/initmain
+$team join Lobby @a[team=$(team)]
+$bossbar set minecraft:$(teamprogressbar) players

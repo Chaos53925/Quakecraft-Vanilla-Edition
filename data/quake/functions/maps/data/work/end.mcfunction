@@ -8,10 +8,7 @@ tag @s remove game
 tag @s remove immune
 scoreboard players set @s ammo 0
 execute as @s run function shop:main/initmain
-scoreboard players reset @s apexvoting
-scoreboard players reset @s candyvoting
-scoreboard players reset @s desertvoting
-scoreboard players reset @s lostcityvoting
+$scoreboard players reset @s $(votescore)
 team join Lobby @s
 spawnpoint @s 10 17 146
 tp @s 10 17 146 -90.0 0.0

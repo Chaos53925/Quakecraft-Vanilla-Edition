@@ -1,4 +1,4 @@
 # Platzierungsermittlung
-execute as @a[team=apex] unless score @s apexPlace = @s apexPlace if score @p ApexKills = @p[scores={apexPlace=1}] apexTemp store result score @s apexPlace run scoreboard players add #counter apexPlace 1
-scoreboard players remove @p[team=apex,scores={apexPlace=1}] temp 1
-execute if score @p[team=apex,scores={apexPlace=1}] temp matches 0.. run function maps:map/place
+$execute as @a[team=$(team)] unless score @s $(placescore) = @s $(placescore) if score @p $(teamkills) = @p[scores={$(placescore)=1}] $(teamtemp) store result score @s $(placescore) run scoreboard players add #counter $(placescore) 1
+$scoreboard players remove @p[team=$(team),scores={$(placescore)=1}] temp 1
+$execute if score @p[team=$(team),scores={$(placescore)=1}] temp matches 0.. run function maps:map/place with storage quake:$(team)

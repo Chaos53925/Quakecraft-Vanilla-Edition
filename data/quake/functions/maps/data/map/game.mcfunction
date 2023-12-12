@@ -1,27 +1,32 @@
 
-bossbar set minecraft:apexprogress players @a[team=apex]
-scoreboard players set #apexprogress data 0
-execute as @a[team=apex] run scoreboard players operation #apexprogress temp > @s ApexKills
-execute store result bossbar minecraft:apexprogress value run scoreboard players get #apexprogress data
-bossbar set apexprogress name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"Apex","color":"red"},{"score":{"name":"#apexprogress","objective":"data"},"color":"blue"},{"text":"30","color":"blue"}]}]
+$bossbar set minecraft:$(teamprogressbar) players @a[team=$(team)]
+$scoreboard players set $(teamprogress) data 0
+$execute as @a[team=$(team)] run scoreboard players operation $(teamprogress) temp > @s $(teamkills)
+$execute store result bossbar minecraft:$(teamprogressbar) value run scoreboard players get $(teamprogress) data
+$bossbar set $(teamprogressbar) name [{"translate":"main.progressbar","color":"yellow","with":[{"text":"$(teambarname)","color":"$(teamcolor)"},{"score":{"name":"$(teamprogress)","objective":"data"},"color":"blue"},{"text":"30","color":"blue"}]}]
 
-scoreboard objectives setdisplay sidebar.team.red ApexKills 
+#spielerdisplay
+$scoreboard objectives setdisplay sidebar.team.$(teamcolor) $(teamkills) 
 
-execute as @a[team=apex] run function maps:invgame
+#inventar
+$execute as @a[team=$(team)] run function maps:invgame
 
-execute if entity @p[team=apex,scores={ApexKills=30..},limit=1] run function maps:apex/winner
+#gewinner ermittlung
+$execute as @r[team=$(team),scores={$(teamkills)=30..},limit=1] run scoreboard players set @s $(placescore) 1
 
-scoreboard players set #apex apexlobby 0
-execute as @a[team=apex] run scoreboard players add #apex apexlobby 1
-execute if score #apex apexlobby matches ..1 run function maps:apex/cancel
+#abbruchbedingung
+scoreboard players set $(teamlobby) data 0
+$execute as @a[team=$(team)] run scoreboard players add $(teamlobby) data 1
+$execute if score $(teamlobby) data matches ..1 run function maps:map/cancel with storage quake:$(team)
+
 #effekte in-game
-effect give @a[team=apex] speed 1 1 true
-effect give @a[team=apex] jump_boost 1 0 true
+$effect give @a[team=$(team)] speed 1 1 true
+$effect give @a[team=$(team)] jump_boost 1 0 true
 
 #respawn function
-function maps:apex/spawn
+$function maps:map/spawn with storage quake:$(team)
 
-execute as @a[team=apex] run function guns:reload/reload
+$execute as @a[team=$(team)] run function guns:reload/reload
 
 #endfunktion
-execute at @p[tag=a1,team=apex] run function maps:apex/end
+$execute at @p[team=$(team),scores={$(placescore)=1}] run function maps:map/end with storage quake:$(team)

@@ -1,3 +1,3 @@
-execute as @a[team=apex] run function maps:invend
-scoreboard players add #apexend game 1
-execute if score #apexend game matches 60.. run function maps:apex/back
+$execute as @a[team=$(team)] run function maps:invend
+$scoreboard players add $(endname) data 1
+$execute if score $(endname) game matches 60.. run function maps:map/back with storage quake:$(team)
