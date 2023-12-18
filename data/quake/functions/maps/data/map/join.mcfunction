@@ -4,7 +4,7 @@ tag @s add game
 tag @s add start
 tag @s remove play
 $scoreboard players set $(teamlobby) data 0
-$execute as @a[team=apex] run scoreboard players add $(teamlobby) data 1
+$execute as @a[team=$(team)] run scoreboard players add $(teamlobby) data 1
 
 #Join Nachricht Map
 $tellraw @a[team=$(team)] [{"translate":"map.join.inmap","color":"yellow","with":[{"selector":"@s","color":"$(teamcolor)"},{"score":{"name":"$(teamlobby)","objective":"data"},"color":"aqua"},{"text":"10","color":"aqua"}]}]

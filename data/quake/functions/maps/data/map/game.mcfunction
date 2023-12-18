@@ -15,7 +15,7 @@ $execute as @a[team=$(team)] run function maps:invgame
 $execute as @r[team=$(team),scores={$(teamkills)=30..},limit=1] run scoreboard players set @s $(placescore) 1
 
 #abbruchbedingung
-scoreboard players set $(teamlobby) data 0
+$scoreboard players set $(teamlobby) data 0
 $execute as @a[team=$(team)] run scoreboard players add $(teamlobby) data 1
 $execute if score $(teamlobby) data matches ..1 run function maps:map/cancel with storage quake:$(team)
 

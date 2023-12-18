@@ -1,10 +1,12 @@
 
+# Alle spieler aktiven werden darüber benachrichtigt, dass die Runde abgebrochen wurde. 
 $tellraw @a[team=$(team)] [{"translate":"map.end.cancel.playergo","color":"red"}]
 
 $execute as @a[team=$(team)] run tellraw @s [{"translate":"map.end.cancel.get","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
 
+# Hier wird alles andere zurückgesetzt um Komplikationen bei einem neuen Spiel zu vermeiden.
+# Die Spieler werden auch in die Lobby gebracht und der Shop wird initialisiert.
 $scoreboard players set $(teamname) $(votescoreboard) 0
-
 $scoreboard players set $(quickplayers) data 0
 $scoreboard players set @a[team=$(team)] Coin 0
 $scoreboard players reset * $(teamkills)

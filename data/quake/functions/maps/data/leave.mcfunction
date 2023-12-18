@@ -1,5 +1,5 @@
 scoreboard players set @s book 0
-$execute if entity @s[team=$team] run tellraw @a[team=$(team)] [{"translate":"join.leave.map","color":"yellow","with":[{"selector":"@s","color":"$(color)"}]}]
+$execute if entity @s[team=$(team)] run tellraw @a[team=$(team)] [{"translate":"join.leave.map","color":"yellow","with":[{"selector":"@s","color":"$(teamcolor)"}]}]
 
 execute at @s[team=Lobby] run particle minecraft:large_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 50 force
 

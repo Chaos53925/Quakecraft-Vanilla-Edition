@@ -1,6 +1,8 @@
 
 $scoreboard objectives setdisplay sidebar.team.$(teamcolor) $(teamkills) 
 
+$scoreboard players set $(teamname) $(votescoreboard) 0
+
 $kill @e[type=armor_stand,tag=$(team)]
 $summon armor_stand $(coords0) {CustomNameVisible:0b,NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["$(team)"],DisabledSlots:4144959}
 $summon armor_stand $(coords1) {CustomNameVisible:0b,NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["$(team)"],DisabledSlots:4144959}
