@@ -1,5 +1,5 @@
 # beforethegame
-data merge storage quake:desert {exist: true, team: "desert", teamcolor: "red"}
+data merge storage quake:desert {Version: "1.0.0", team: "desert", teamcolor: "gold", barcolor: "yellow"}
 data merge storage quake:desert {votetag: "desertvote", votescoreboard: "desertvote", votename: "#desertvote", votescore: "desertvoting"}
 data merge storage quake:desert {bar: desertbar, barname: "#desertbar", teamlobby: "#desertlobby", seconds: "#desertsek", minutes: "#desertmin", quickplayers: "#desertquick", teamname: "#desert"}
 # game

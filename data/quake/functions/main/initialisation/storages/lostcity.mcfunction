@@ -1,5 +1,5 @@
 # beforethegame
-data merge storage quake:lostcity {exist: true, team: "lostcity", teamcolor: "red"}
+data merge storage quake:lostcity {Version: "1.0.0", team: "lostcity", teamcolor: "grey", barcolor: "gray"}
 data merge storage quake:lostcity {votetag: "lostcityvote", votescoreboard: "lostcityvote", votename: "#lostcityvote", votescore: "lostcityvoting"}
 data merge storage quake:lostcity {bar: lostcitybar, barname: "#lostcitybar", teamlobby: "#lostcitylobby", seconds: "#lostcitysek", minutes: "#lostcitymin", quickplayers: "#lostcityquick", teamname: "#lostcity"}
 # game

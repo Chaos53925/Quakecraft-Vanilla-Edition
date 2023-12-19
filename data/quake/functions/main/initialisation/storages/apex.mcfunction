@@ -1,5 +1,5 @@
 # beforethegame
-data merge storage quake:apex {exist: true, team: "apex", teamcolor: "red"}
+data merge storage quake:apex {Version: "1.0.0", team: "apex", teamcolor: "red", barcolor: "red"}
 data merge storage quake:apex {votetag: "apexvote", votescoreboard: "apexvote", votename: "#apexvote", votescore: "apexvoting"}
 data merge storage quake:apex {bar: apexbar, barname: "#apexbar", teamlobby: "#apexlobby", seconds: "#apexsek", minutes: "#apexmin", quickplayers: "#apexquick", teamname: "#apex"}
 # game

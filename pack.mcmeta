@@ -3,7 +3,7 @@
         "pack_format": 18,
         "supported_formats": {
             "min_inclusive": 18,
-            "max_inclusive": 18
+            "max_inclusive": 27
         },
         "description": "Quakecraft Datapack",
         "author": "Chaos_53925"

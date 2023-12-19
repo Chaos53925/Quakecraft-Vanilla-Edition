@@ -1,5 +1,5 @@
 # beforethegame
-data merge storage quake:candy {exist: true, team: "candy", teamcolor: "red"}
+data merge storage quake:candy {Version: "1.0.0", team: "candy", teamcolor: "aqua", barcolor: "blue"}
 data merge storage quake:candy {votetag: "candyvote", votescoreboard: "candyvote", votename: "#candyvote", votescore: "candyvoting"}
 data merge storage quake:candy {bar: candybar, barname: "#candybar", teamlobby: "#candylobby", seconds: "#candysek", minutes: "#candymin", quickplayers: "#candyquick", teamname: "#candy"}
 # game
