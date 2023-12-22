@@ -3,14 +3,14 @@ $scoreboard players set @a[team=apex,tag=$(votetag)] $(votescore) 1
 $scoreboard objectives setdisplay sidebar.team.$(teamcolor) $(votescore)
 
 $bossbar set minecraft:$(bar) players @a[team=$(team)]
-$execute as @a[scores={book=1..},tag=!play] unless entity @s[nbt={Inventory:[{Slot:8b, id:"minecraft:knowledge_book"}]}] run function custom:leave with storage quake:$(team)
+$execute as @a[scores={book=1..},tag=!play] unless entity @s[nbt={Inventory:[{Slot:8b, id:"minecraft:knowledge_book"}]}] run function quake:maps/data/leave with storage quake:$(team)
 $scoreboard players set $(teamlobby) data 0
 # Lobbycounter
 $execute as @a[team=$(team)] run scoreboard players add $(teamlobby) data 1
 # Timerfunktion
-$execute if score $(teamlobby) data matches 1.. run function maps:map/timer with storage quake:$(team)
+$execute if score $(teamlobby) data matches 1.. run function quake:maps/data/map/timer with storage quake:$(team)
 
-$execute as @a[team=$(team)] run function maps:invbefore
+$execute as @a[team=$(team)] run function quake:maps/data/work/invbefore
 
 $execute store result bossbar minecraft:$(bar) value run scoreboard players get $(barname) data
 
@@ -24,7 +24,7 @@ $execute if score $(teamlobby) data matches 1.. run scoreboard players add $(tea
 $execute if score $(seconds) data matches 0..59 if score $(minutes) data matches 1..2 if score $(quickplayers) data matches 0 if score $(teamlobby) data matches 2.. if score $(teamlobby) data = $(teamname) $(votescoreboard) run function maps:map/quickstart with storage quake:$(team)
 $execute if score $(seconds) data matches 16..59 if score $(minutes) data matches 0 if score $(quickplayers) data matches 0 if score $(teamlobby) data matches 2.. if score $(teamlobby) data = $(teamname) $(votescoreboard) run function maps:map/quickstart with storage quake:$(team)
 
-$execute as @a[team=apex,tag=!$(votetag),scores={book=1..}] unless entity @s[nbt={Inventory:[{Slot:7b, id:"minecraft:knowledge_book"}]}] run function maps:map/voting with storage $(team)
+$execute as @a[team=apex,tag=!$(votetag),scores={book=1..}] unless entity @s[nbt={Inventory:[{Slot:7b, id:"minecraft:knowledge_book"}]}] run function quake:maps/data/map/voting with storage $(team)
 
 $execute store result score $(votename) data if entity @a[tag=$(votetag)]
 

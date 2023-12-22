@@ -3,16 +3,16 @@ $tellraw @a[team=$(team)] [{"translate":"map.end.haswon","color":"green","with":
 $execute as @a[team=$(team)] unless entity @s[scores={$(placescore)=1}] run tellraw @s [{"translate":"map.end.teilnehmer","color":"blue"},{"text":" 50 ","color":"red"},{"text":"Coins","color":"gold"},{"text":".","color":"blue"}]
 $tellraw @a[scores={$(placescore)=1},team=$(team)] [{"translate":"map.end.winner","color":"blue","with":[{"text":"75","color":"red"},{"text":"Coins","color":"gold"}]}]
 
-$execute as @a[scores={$(placescore)=1}] run function maps:winreward
+$execute as @a[scores={$(placescore)=1}] run function quake:maps/data/work/winreward
 $execute as @a[team=$(team)] unless entity @s[scores={$(placescore)=1}] run scoreboard players add @s lost 1
 $tag @a[team=$(team)] add end
-$execute as @a[team=$(team)] run function maps:rewards
+$execute as @a[team=$(team)] run function quake:maps/data/work/rewards
 $execute as @a[team=$(team)] run tellraw @s [{"translate":"map.end.insgesamt","color":"yellow","with":[{"score":{"name":"@s","objective":"Coin"},"color":"red"},{"text":" Coins","color":"gold"}]}]
 
 # Speichert den Scoreboartd Wert des erstplatzierten in einem Temporären Scoreboard ab, werlcher beim erstplatzieren gespeichert wird.
 # Nach übertragen des Coreboards wird die Funktion für die ermittlung der Platzierung ausgeführt.
 $scoreboard players operation @p[scores={$(placescore)=1}] $(teamtemp) = @p[scores={$(placescore)=1}] $(teamkills)
-function maps:apex/place
+function quake:maps/data/map/place
 
 # Gibt allen Spielern auf der Map die Platzierung aus.
 # Die Platzierung enthält auch gleichzeitig die Information darüber wer welchen Platz mit wie vielen Kills erreicht hat.

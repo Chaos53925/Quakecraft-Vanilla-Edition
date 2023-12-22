@@ -18,13 +18,13 @@ $summon armor_stand $(coords9) {CustomNameVisible:0b,NoGravity:1b,Silent:1b,Invu
 $bossbar set minecraft:$(bar) players
 $clear @a[team=$(team)]
 $tag @a[team=$(team)] remove start
-$execute as @a[team=$(team)] run function maps:inv
-$execute as @a[team=$(team)] run function maps:scores
+$execute as @a[team=$(team)] run function quake:maps/data/work/inv
+$execute as @a[team=$(team)] run function quake:maps/data/work/scores
 $scoreboard players add $(mapdata) data 1
 $tag @a[team=$(team)] add $(starttag)
 $tag @a[team=$(team)] add play
 $tag @a[team=$(team)] remove $(votetag)
-$function maps:map/spawn with storage quake:$(team)
+$function quake:maps/data/map/spawn with storage quake:$(team)
 $scoreboard players set @a[team=$(team)] $(teamkills) 0
 $execute as @a[team=$(team)] at @s run playsound minecraft:entity.player.levelup master @s[tag=!soundsoff] ~ ~ ~ 0.4 1 0
 $tag @a[team=$(team)] remove start

@@ -9,7 +9,7 @@ $bossbar set $(teamprogressbar) name [{"translate":"main.progressbar","color":"y
 $scoreboard objectives setdisplay sidebar.team.$(teamcolor) $(teamkills) 
 
 #inventar
-$execute as @a[team=$(team)] run function maps:invgame
+$execute as @a[team=$(team)] run function quake:maps/data/work/invgame
 
 #gewinner ermittlung
 $execute as @r[team=$(team),scores={$(teamkills)=30..},limit=1] run scoreboard players set @s $(placescore) 1
@@ -17,16 +17,16 @@ $execute as @r[team=$(team),scores={$(teamkills)=30..},limit=1] run scoreboard p
 #abbruchbedingung
 $scoreboard players set $(teamlobby) data 0
 $execute as @a[team=$(team)] run scoreboard players add $(teamlobby) data 1
-$execute if score $(teamlobby) data matches ..1 run function maps:map/cancel with storage quake:$(team)
+$execute if score $(teamlobby) data matches ..1 run function quake:maps/data/map/cancel with storage quake:$(team)
 
 #effekte in-game
 $effect give @a[team=$(team)] speed 1 1 true
 $effect give @a[team=$(team)] jump_boost 1 0 true
 
 #respawn function
-$function maps:map/spawn with storage quake:$(team)
+$function maps:maps/data/map/spawn with storage quake:$(team)
 
 $execute as @a[team=$(team)] run function guns:reload/reload
 
 #endfunktion
-$execute at @p[team=$(team),scores={$(placescore)=1}] run function maps:map/end with storage quake:$(team)
+$execute at @p[team=$(team),scores={$(placescore)=1}] run function quake:maps/data/map/end with storage quake:$(team)
